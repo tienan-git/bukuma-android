@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+      app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <FrameLayout
+      android:id="@+id/container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/edit_tag_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@color/list_separator"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      android:orientation="horizontal"
+      android:background="@android:color/white">
+
+      <jp.com.labit.bukuma.ui.custom.TagEditText
+        android:id="@+id/tag_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="12dp"
+        android:padding="6dp"
+        android:background="@drawable/background_edit_text"
+        android:textSize="16sp"
+        app:chipBackground="@drawable/background_tag_chip"
+        app:unselectedChipTextColor="@android:color/white"
+        android:completionThreshold="1"/>
+
+      <Button
+        android:id="@+id/send_tags_button"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="?selectableItemBackground"
+        android:text="追加"
+        android:textSize="16sp"
+        android:textColor="@color/black54"/>
+    </LinearLayout>
+  </LinearLayout>
+
+</FrameLayout>

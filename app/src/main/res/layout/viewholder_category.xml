@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="52dp"
+  android:background="@drawable/background_button_white"
+  android:gravity="center_vertical"
+  android:orientation="horizontal"
+  android:padding="16dp">
+
+  <jp.com.labit.bukuma.ui.custom.OvalView
+    android:id="@+id/circle"
+    android:layout_width="14dp"
+    android:layout_height="14dp"
+    android:layout_marginRight="16dp"
+    android:background="@android:color/black"/>
+
+  <TextView
+    android:id="@+id/name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="name"
+    android:textColor="@color/black54"
+    android:textSize="14sp"
+    android:textStyle="bold"/>
+
+  <!--<ImageView-->
+  <!--android:layout_width="wrap_content"-->
+  <!--android:layout_height="wrap_content"-->
+  <!--android:src="@drawable/ic_setting_next"/>-->
+
+</LinearLayout>

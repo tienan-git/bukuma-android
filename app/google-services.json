@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "236920252185",
+    "firebase_url": "https://bukuma-d331e.firebaseio.com",
+    "project_id": "bukuma-d331e",
+    "storage_bucket": "bukuma-d331e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236920252185:android:96868924c5302d34",
+        "android_client_info": {
+          "package_name": "jp.com.labit.bukuma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236920252185-muk96t4e7m7vle7jhiotenvhcqpem2a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOgldxVQaM1q5fpSZMHOzSBQZwOgjMWJA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236920252185:android:edb27cf27eb6ba84",
+        "android_client_info": {
+          "package_name": "jp.com.labit.bukumaDEV"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236920252185-muk96t4e7m7vle7jhiotenvhcqpem2a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOgldxVQaM1q5fpSZMHOzSBQZwOgjMWJA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

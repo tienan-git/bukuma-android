@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/list_separator"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/current_email_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:text="current@email.com"
+    android:textColor="@color/black87"
+    android:textSize="14sp"/>
+
+  <EditText
+    android:id="@+id/new_email_edittext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:hint="@string/email_update_new_hint"
+    android:inputType="textEmailAddress"
+    android:padding="16dp"
+    android:textSize="14sp"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/list_separator"/>
+
+  <EditText
+    android:id="@+id/confirm_email_edittext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:hint="@string/email_update_confirm_hint"
+    android:inputType="textEmailAddress"
+    android:padding="16dp"
+    android:textSize="14sp"/>
+
+</LinearLayout>

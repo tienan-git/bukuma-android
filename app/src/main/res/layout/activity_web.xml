@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:animateLayoutChanges="true">
+
+  <WebView
+    android:id="@+id/webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/action_layout"/>
+
+  <FrameLayout
+    android:id="@+id/action_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    tools:ignore="UnusedAttribute">
+
+    <ImageButton
+      android:id="@+id/back_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="?selectableItemBackground"
+      android:padding="8dp"
+      android:src="@drawable/ic_tab_back"/>
+
+    <ImageButton
+      android:id="@+id/next_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:background="?selectableItemBackground"
+      android:padding="8dp"
+      android:src="@drawable/ic_tab_next"/>
+
+    <ImageButton
+      android:id="@+id/refresh_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right"
+      android:background="?selectableItemBackground"
+      android:padding="8dp"
+      android:src="@drawable/ic_tab_refresh"/>
+  </FrameLayout>
+
+  <ProgressBar
+    android:id="@+id/progress_bar"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:max="100"/>
+
+</RelativeLayout>

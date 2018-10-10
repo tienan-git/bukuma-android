@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/background_button_white"
+  android:padding="16dp">
+
+  <ImageView
+    android:id="@+id/avatar_imageview"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginRight="16dp"/>
+
+  <TextView
+    android:id="@+id/name_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/time_textview"
+    android:layout_toRightOf="@+id/avatar_imageview"
+    android:text="unknown"
+    android:textColor="@color/black87"
+    android:textSize="12sp"
+    android:textStyle="bold"/>
+
+  <TextView
+    android:id="@+id/time_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="8dp"
+    android:text="time"
+    android:textSize="10sp"/>
+
+  <ImageView
+    android:id="@+id/mood_imageview"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_alignLeft="@+id/name_textview"
+    android:layout_below="@+id/name_textview"
+    android:layout_marginLeft="-4dp"
+    android:src="@drawable/ic_face_01"/>
+
+  <TextView
+    android:id="@+id/mood_textview"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:layout_alignBaseline="@id/mood_imageview"
+    android:layout_below="@+id/name_textview"
+    android:layout_toRightOf="@id/mood_imageview"
+    android:gravity="center_vertical"
+    android:textColor="@color/mood_happy"
+    android:textSize="10sp"/>
+
+  <TextView
+    android:id="@+id/comment_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/name_textview"
+    android:layout_below="@id/mood_textview"
+    android:layout_marginTop="8dp"
+    android:textColor="@color/black87"
+    android:textSize="14sp"/>
+
+</RelativeLayout>

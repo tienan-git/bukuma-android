@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/background_button_white">
+
+	<TextView
+		android:id="@+id/color_bar"
+		android:layout_width="3dp"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/todo_self"
+		android:layout_alignLeft="@+id/todo_self"
+		android:layout_alignTop="@+id/todo_self"/>
+
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/todo_self"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp">
+
+		<ImageView
+			android:id="@+id/avatar_imageview"
+			android:layout_width="36dp"
+			android:layout_height="36dp"
+			android:layout_marginRight="8dp"/>
+
+		<TextView
+			android:id="@+id/todo_textview"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:layout_toLeftOf="@+id/book_imageview"
+			android:layout_toRightOf="@+id/avatar_imageview"
+			android:text="todo"
+			android:textStyle="bold"
+			android:textColor="@color/black87"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/textview"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:layout_toLeftOf="@+id/book_imageview"
+			android:layout_toRightOf="@+id/avatar_imageview"
+			android:layout_below="@+id/todo_textview"
+			android:text="text"
+			android:textColor="@color/black64"
+			android:textSize="12sp"/>
+
+		<TextView
+			android:id="@+id/time_textview"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/textview"
+			android:layout_alignRight="@+id/textview"
+			android:layout_below="@+id/textview"
+			android:text="time"
+			android:textColor="@color/time_text"
+			android:textSize="12sp"/>
+
+		<ImageView
+			android:id="@+id/book_imageview"
+			android:layout_width="@dimen/book_item_width"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginLeft="8dp"
+			android:adjustViewBounds="true"
+			android:background="@color/list_separator"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

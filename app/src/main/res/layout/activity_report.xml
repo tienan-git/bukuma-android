@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"/>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_separator"
+    android:padding="10dp"
+    android:text=""/>
+
+  <!-- Topic -->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="8dp">
+
+    <TextView
+      android:id="@+id/topic_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="16dp"
+      android:text="@string/report_topic"/>
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <Spinner
+        android:id="@+id/topic_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"/>
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/list_separator"/>
+
+  <EditText
+    android:id="@+id/description_edittext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="top"
+    android:hint="@string/report_detail"
+    android:maxLines="5"
+    android:minHeight="100dp"
+    android:padding="16dp"
+    android:textAppearance="?android:textAppearance"/>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_separator"
+    android:padding="16dp"
+    android:text="@string/report_environment"/>
+
+  <!-- Device Name -->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="16dp"
+      android:layout_weight="1"
+      android:text="@string/report_device"/>
+
+    <TextView
+      android:id="@+id/device_textview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Some"
+      android:textColor="@color/black"/>
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/list_separator"/>
+
+  <!-- Device OS -->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="16dp"
+      android:layout_weight="1"
+      android:text="@string/report_os"/>
+
+    <TextView
+      android:id="@+id/os_textview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Some"
+      android:textColor="@color/black"/>
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/list_separator"/>
+
+  <!-- App name -->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="16dp"
+      android:layout_weight="1"
+      android:text="@string/report_appname"/>
+
+    <TextView
+      android:id="@+id/name_textview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Some"
+      android:textColor="@color/black"/>
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/list_separator"/>
+
+  <!-- App ver -->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="16dp"
+      android:layout_weight="1"
+      android:text="@string/report_appver"/>
+
+    <TextView
+      android:id="@+id/version_textview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Some"
+      android:textColor="@color/black"/>
+
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/contact_form_message"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/list_separator"
+      android:padding="16dp"/>
+
+</LinearLayout>
+</ScrollView>

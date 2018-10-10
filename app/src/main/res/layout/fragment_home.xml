@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <FrameLayout
+    android:id="@+id/home_container"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <LinearLayout
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:columnCount="5"
+    android:elevation="2dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    tools:ignore="UnusedAttribute">
+
+    <ImageButton
+      android:id="@+id/list_button"
+      android:layout_height="match_parent"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:background="?selectableItemBackground"
+      android:src="@drawable/ic_tab_home"/>
+
+    <ImageButton
+      android:id="@+id/search_cat_button"
+      android:layout_height="match_parent"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:background="?selectableItemBackground"
+      android:src="@drawable/ic_tab_search"/>
+
+    <ImageButton
+      android:id="@+id/camera_button"
+      android:layout_height="match_parent"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:background="@null"
+      android:src="@drawable/ic_tab_camera"/>
+
+    <FrameLayout
+      android:layout_height="match_parent"
+      android:layout_width="0dp"
+      android:layout_weight="1">
+
+      <ImageButton
+        android:id="@+id/chat_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:src="@drawable/ic_tab_chat"/>
+
+      <TextView
+        android:id="@+id/chat_count_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_drawer_count"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"/>
+
+    </FrameLayout>
+
+    <ImageButton
+      android:id="@+id/profile_button"
+      android:layout_height="match_parent"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:background="?selectableItemBackground"
+      android:src="@drawable/ic_tab_mypage"/>
+
+  </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:paddingBottom="16dp"
+  android:paddingTop="16dp">
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/list_separator_dark"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+      android:id="@+id/book_imageview"
+      android:layout_width="@dimen/book_item_width"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="16dp"
+      android:adjustViewBounds="true"
+      android:background="@color/list_separator_dark"/>
+
+    <TextView
+      android:id="@+id/desc_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/chat_message_transaction_desc"
+      android:textColor="@color/black87"
+      android:textSize="12sp"/>
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/list_separator_dark"/>
+
+</LinearLayout>

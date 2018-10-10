@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_separator"
+      android:padding="16dp"
+      android:text="@string/purchase_merchandise_header"
+      android:textSize="12sp"/>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:padding="16dp">
+
+      <ImageView
+        android:id="@+id/book_imageview"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:background="@color/list_separator"/>
+
+      <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/book_imageview"
+        android:text="title"
+        android:textColor="@color/black87"
+        android:textSize="14sp"/>
+
+      <TextView
+        android:id="@+id/author_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_textview"
+        android:layout_below="@+id/title_textview"
+        android:text="author"
+        android:textColor="@color/black54"
+        android:textSize="12sp"/>
+
+      <TextView
+        android:id="@+id/publisher_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_textview"
+        android:layout_below="@+id/author_textview"
+        android:text="publisher"
+        android:textColor="@color/black54"
+        android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/background_button_white"
+      android:padding="16dp">
+
+      <ImageView
+        android:id="@+id/seller_imageview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="16dp"/>
+
+      <TextView
+        android:id="@+id/seller_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unknown"
+        android:textColor="@color/black54"
+        android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_separator"
+      android:padding="16dp"
+      android:text="@string/purchase_info_header"
+      android:textSize="12sp"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/price_formview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:editable="false"
+      app:title="@string/purchase_info_price"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <LinearLayout
+      android:id="@+id/creditcard_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/background_button_white"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+          android:id="@+id/creditcard_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_toLeftOf="@+id/creditcard_imageview"
+          android:text="@string/purchase_info_payment"
+          android:textColor="@color/black87"
+          android:textSize="14sp"/>
+
+        <TextView
+          android:id="@+id/creditcard_number_textview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:text="**** **** **** ****"
+          android:textColor="@color/black87"
+          android:textSize="10sp"/>
+
+        <TextView
+          android:id="@+id/creditcard_expiry_textview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/creditcard_number_textview"
+          android:layout_alignRight="@id/creditcard_number_textview"
+          android:layout_below="@id/creditcard_number_textview"
+          android:text="00 / 00"
+          android:textColor="@color/black54"
+          android:textSize="8sp"/>
+
+        <ImageView
+          android:id="@+id/creditcard_imageview"
+          android:layout_width="22dp"
+          android:layout_height="22dp"
+          android:layout_marginRight="8dp"
+          android:layout_toLeftOf="@id/creditcard_number_textview"
+          android:src="@drawable/img_credit_visa"/>
+
+      </RelativeLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/bonus_point_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <jp.com.labit.bukuma.ui.custom.FormView
+        android:id="@+id/bonus_point_formview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:editable="false"
+        app:title="@string/purchase_info_bonus_point"/>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/sale_point_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <jp.com.labit.bukuma.ui.custom.FormView
+        android:id="@+id/sale_point_formview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:editable="false"
+        app:title="@string/purchase_info_sale_point"/>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+    </LinearLayout>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/amount_formview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:editable="false"
+      app:title="@string/purchase_info_amount"/>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_separator"
+      android:padding="16dp"
+      android:text="@string/purchase_info_footer"
+      android:textSize="12sp"/>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_separator"
+      android:padding="16dp"
+      android:text="@string/purchase_shipping_header"
+      android:textSize="12sp"/>
+
+    <TextView
+      android:id="@+id/address_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/background_button_white"
+      android:padding="16dp"
+      android:text="address"
+      android:textColor="@color/black87"
+      android:textSize="14sp"/>
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:clipToPadding="false"
+      android:padding="16dp">
+
+      <Button
+        android:id="@+id/purchase_button"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_button_red"
+        android:text="@string/purchase_proceed"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+</ScrollView>

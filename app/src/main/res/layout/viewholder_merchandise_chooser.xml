@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/background_button_white"
+  android:padding="16dp">
+
+  <ImageView
+    android:id="@+id/book_imageview"
+    android:layout_width="@dimen/book_item_width"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="16dp"
+    android:adjustViewBounds="true"
+    android:background="@color/list_separator"/>
+
+  <TextView
+    android:id="@+id/title_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_toRightOf="@+id/book_imageview"
+    android:text="title"
+    android:textColor="@color/black87"
+    android:textSize="14sp"/>
+
+  <LinearLayout
+    android:id="@+id/price_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title_textview"
+    android:layout_toRightOf="@+id/book_imageview">
+
+    <ImageView
+      android:layout_width="30dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="8dp"
+      android:src="@drawable/ic_shipping_included"/>
+
+    <TextView
+      android:id="@+id/price_textview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/money_unit"
+      android:textColor="@color/black87"
+      android:textSize="14sp"/>
+
+    <TextView
+      android:id="@+id/quality_textview"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="8dp"
+      android:text="@string/book_status_new"
+      android:textColor="@color/black54"
+      android:textSize="10sp"/>
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/sold_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/price_layout"
+    android:layout_toRightOf="@+id/book_imageview"
+    android:text="@string/book_detail_sold_out"
+    android:textColor="@color/black54"
+    android:textSize="12sp"/>
+
+</RelativeLayout>

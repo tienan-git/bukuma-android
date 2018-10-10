@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_separator"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:id="@+id/cancel_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:background="@drawable/background_cancel_transaction"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/transaction_cancel_title"
+        android:textColor="@color/black87"
+        android:textSize="14sp"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/transaction_cancel_message"
+        android:textColor="@color/black54"
+        android:textSize="10sp"/>
+
+      <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_button_red"
+        android:text="@string/transaction_cancel_button"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_separator"
+      android:padding="16dp"
+      android:text="@string/transaction_progress_title"
+      android:textSize="12sp"/>
+
+    <LinearLayout
+      android:id="@+id/status_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:orientation="vertical"
+      android:paddingBottom="16dp"
+      android:paddingTop="16dp">
+
+      <TextView
+        android:id="@+id/status_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="@string/transaction_progress_buyer_prepare_title"
+        android:textColor="@color/black87"
+        android:textSize="14sp"/>
+
+      <TextView
+        android:id="@+id/status_description_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/transaction_progress_buyer_prepare_description"
+        android:textColor="@color/black54"
+        android:textSize="10sp"/>
+
+      <jp.com.labit.bukuma.ui.custom.StepperView
+        android:id="@+id/stepper"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        app:activeColor="@color/colorPrimary"
+        app:inactiveColor="@color/colorPrimaryLight"/>
+
+      <LinearLayout
+        android:id="@+id/step_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+          android:id="@+id/step_one_textview"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="@string/transaction_step_one"
+          android:textColor="@color/colorPrimary"
+          android:textSize="10sp"/>
+
+        <TextView
+          android:id="@+id/step_two_textview"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="@string/transaction_step_two"
+          android:textColor="@color/black54"
+          android:textSize="10sp"/>
+
+        <TextView
+          android:id="@+id/step_three_textview"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="@string/transaction_step_three"
+          android:textColor="@color/black54"
+          android:textSize="10sp"/>
+
+        <TextView
+          android:id="@+id/step_four_textview"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="@string/transaction_step_four"
+          android:textColor="@color/black54"
+          android:textSize="10sp"/>
+
+      </LinearLayout>
+
+      <Button
+        android:id="@+id/sent_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_button_primary_border"
+        android:text="@string/transaction_sent_button"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/user_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <RelativeLayout
+        android:id="@+id/seller_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_white"
+        android:padding="16dp">
+
+        <ImageView
+          android:id="@+id/avatar_imageview"
+          android:layout_width="34dp"
+          android:layout_height="34dp"
+          android:layout_marginRight="16dp"/>
+
+        <TextView
+          android:id="@+id/name_textview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/avatar_imageview"
+          android:text="name"
+          android:textColor="@color/black87"
+          android:textSize="14sp"/>
+
+        <LinearLayout
+          android:id="@+id/mood_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/name_textview"
+          android:layout_alignRight="@+id/name_textview"
+          android:layout_below="@+id/name_textview">
+
+          <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_face_01"/>
+
+          <TextView
+            android:id="@+id/mood_happy_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textSize="10sp"/>
+
+          <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/ic_face_02"/>
+
+          <TextView
+            android:id="@+id/mood_normal_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textSize="10sp"/>
+
+          <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/ic_face_03"/>
+
+          <TextView
+            android:id="@+id/mood_sad_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textSize="10sp"/>
+
+        </LinearLayout>
+
+      </RelativeLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <LinearLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_white"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+          android:id="@+id/chat_textview"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/transaction_buyer_chat"
+          android:textColor="@color/black87"
+          android:textSize="14sp"/>
+
+        <ImageView
+          android:id="@+id/disclosure_icon"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="-8dp"
+          android:src="@drawable/ic_to"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/review_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_separator"
+        android:padding="16dp"
+        android:text="@string/transaction_review_title"
+        android:textSize="12sp"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <Button
+            android:id="@+id/happy_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_button_white"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/icon_mood_happy"
+            android:padding="14dp"
+            android:stateListAnimator="@null"
+            android:text="@string/transaction_review_good"
+            android:textColor="@color/color_mood_happy"
+            android:textSize="10sp"
+            tools:ignore="ButtonStyle,UnusedAttribute"/>
+
+          <Button
+            android:id="@+id/fair_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_button_white"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/icon_mood_fair"
+            android:padding="14dp"
+            android:stateListAnimator="@null"
+            android:text="@string/transaction_review_fair"
+            android:textColor="@color/color_mood_fair"
+            android:textSize="10sp"
+            tools:ignore="ButtonStyle,UnusedAttribute"/>
+
+          <Button
+            android:id="@+id/sad_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_button_white"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/icon_mood_sad"
+            android:padding="14dp"
+            android:stateListAnimator="@null"
+            android:text="@string/transaction_review_bad"
+            android:textColor="@color/color_mood_sad"
+            android:textSize="10sp"
+            tools:ignore="ButtonStyle,UnusedAttribute"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notice_report_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:background="@android:color/white"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+          <View
+              android:layout_width="12dp"
+              android:layout_height="12dp"
+              android:layout_marginTop="8dp"
+              android:layout_gravity="center_horizontal"
+              android:background="@color/notice_report_balloon"
+              android:rotation="45"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="-6dp"
+              android:background="@drawable/background_notice_report_balloon"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/transaction_notice_report"
+                android:textColor="@color/black74"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/inquiry_button"
+                android:layout_width="220dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_button_bright_red_border"
+                android:text="@string/transaction_report_button"
+                android:textColor="@color/bright_red"
+                android:textSize="14sp"/>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+          android:id="@+id/review_edittext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="top"
+          android:hint="@string/transaction_review_good_placeholder"
+          android:maxLength="200"
+          android:textSize="14sp"/>
+
+        <Button
+          android:id="@+id/review_button"
+          android:layout_width="match_parent"
+          android:layout_height="34dp"
+          android:layout_marginTop="8dp"
+          android:background="@drawable/background_button_primary"
+          android:text="@string/transaction_review_button"
+          android:textColor="@android:color/white"
+          android:textSize="14sp"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_separator"
+      android:padding="16dp"
+      android:text="@string/transaction_content_title"
+      android:textSize="12sp"/>
+
+    <LinearLayout
+      android:id="@+id/info_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:id="@+id/book_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+          android:id="@+id/book_imageview"
+          android:layout_width="90dp"
+          android:layout_height="wrap_content"
+          android:background="@color/list_separator"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+          <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+          <TextView
+            android:id="@+id/author_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="author"
+            android:textColor="@color/black54"
+            android:textSize="12sp"/>
+
+          <TextView
+            android:id="@+id/publisher_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="publisher"
+            android:textColor="@color/black54"
+            android:textSize="12sp"/>
+
+          <TextView
+            android:id="@+id/shipping_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="shipping"
+            android:textColor="@color/black54"
+            android:textSize="12sp"/>
+
+          <TextView
+            android:id="@+id/status_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/book_detail_status"
+            android:textColor="@color/black54"
+            android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginRight="-8dp"
+          android:src="@drawable/ic_to"/>
+
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <jp.com.labit.bukuma.ui.custom.FormView
+        android:id="@+id/price_formview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:editable="false"
+        app:title="@string/transaction_content_price"/>
+
+      <LinearLayout
+        android:id="@+id/price_with_commission_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/transaction_buying_price"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+          <TextView
+            android:id="@+id/price_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥2,000"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="8dp">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/publish_book_sales_commission"
+            android:textColor="@color/black54"
+            android:textSize="12sp"/>
+
+          <TextView
+            android:id="@+id/sales_commission_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥200"
+            android:textColor="@color/black54"
+            android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="24dp">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/transaction_sales_profit"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+          <TextView
+            android:id="@+id/sales_profit_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥2,000"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+        </LinearLayout>
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <jp.com.labit.bukuma.ui.custom.FormView
+        android:id="@+id/bought_formview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:editable="false"
+        app:title="@string/transaction_content_bought_date"/>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/transaction_content_ship_date"
+          android:textColor="@color/black87"
+          android:textSize="14sp"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+          <TextView
+            android:id="@+id/shipping_date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="2017年02月13日頃"
+            android:textStyle="bold"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+          <TextView
+            android:id="@+id/ship_in_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="発送までの目安"
+            android:textColor="@color/black54"
+            android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <jp.com.labit.bukuma.ui.custom.FormView
+          android:id="@+id/id_formview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:editable="false"
+          app:title="@string/transaction_content_contact_id"/>
+
+        <View
+          android:id="@+id/id_click_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+
+      </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/address_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/address_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_separator"
+        android:padding="16dp"
+        android:text="@string/transaction_address_title"
+        android:textSize="12sp"/>
+
+      <LinearLayout
+        android:id="@+id/address_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_white"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/address_textview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="〒123-4567\naddress"
+          android:textColor="@color/black87"
+          android:textSize="14sp"
+          android:lineSpacingExtra="6sp"/>
+
+        <TextView
+          android:id="@+id/buyer_name_textview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6sp"
+          android:text="name"
+          android:textColor="@color/black87"
+          android:textSize="16sp"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_separator"
+      android:padding="16dp"
+      android:text="@string/transaction_help_title"
+      android:textSize="12sp"/>
+
+    <LinearLayout
+      android:id="@+id/help_1_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/background_button_white"
+      android:gravity="center_vertical"
+      android:padding="16dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/transaction_help_packaging_method"
+        android:textColor="@color/black87"
+        android:textSize="14sp"/>
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-8dp"
+        android:src="@drawable/ic_to"/>
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <LinearLayout
+      android:id="@+id/help_2_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/background_button_white"
+      android:gravity="center_vertical"
+      android:padding="16dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/transaction_help_trouble_with_trading"
+        android:textColor="@color/black87"
+        android:textSize="14sp"/>
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-8dp"
+        android:src="@drawable/ic_to"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>

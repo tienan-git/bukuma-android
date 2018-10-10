@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#64c4a2</color>
+  <color name="colorPrimaryDark">#37a37d</color>
+  <color name="colorPrimaryLight">#cce6dc</color>
+  <color name="colorAccent">@color/colorPrimary</color>
+
+  <color name="list_separator_dark">#ddd</color>
+  <color name="list_separator">#eee</color>
+
+  <color name="mood_happy">#EF5185</color>
+  <color name="mood_fair">#FBA932</color>
+  <color name="mood_sad">#6AB5D8</color>
+
+  <color name="red_button">#FB6276</color>
+  <color name="red_selected_button">#b92d3f</color>
+  <color name="grey_button">#bcbcbc</color>
+  <color name="grey_selected_button">#7b7b7b</color>
+  <color name="darkgrey_button">#6a7380</color>
+  <color name="darkgrey_selected_button">#484e58</color>
+  <color name="facebook_button">#3b5998</color>
+  <color name="facebook_selected_button">#253b69</color>
+  <color name="discount_rate">#EF767A</color>
+  <color name="bright_red">#EF767A</color>
+  <color name="warm_pink">#fb6276</color>
+
+  <color name="black87">#de000000</color>
+  <color name="black74">#bc000000</color>
+  <color name="black64">#a3000000</color>
+  <color name="black54">#8a000000</color>
+  <color name="black26">#42000000</color>
+  <color name="black12">#20000000</color>
+  <color name="black6">#0f000000</color>
+  <color name="black">#000000</color>
+
+  <color name="white50">#80FFFFFF</color>
+  <color name="white70">#B3FFFFFF</color>
+
+  <color name="gray">#b7bdc5</color>
+
+  <color name="notice_report_balloon">#FFFFEFEF</color>
+
+  <color name="todo_item_bar">#e8637c</color>
+  <color name="wating_item_bar">#b3b5bf</color>
+
+  <color name="time_text">#70828e</color>
+  <color name="grey_out">#EBEBEC</color>
+
+  <color name="chips_dropdown_background_activated">#4285f4</color>
+  <color name="chips_dropdown_background_pressed">#ededed</color>
+
+  <color name="autocomplete_divider_color">#cccccc</color>
+  <color name="autocomplete_bottom_shadow_start">#40000000</color>
+
+  <!-- chip -->
+  <color name="chip_background">#f6f6f6</color>
+  <color name="chip_background_invalid">#db4437</color>
+
+  <color name="chips_dropdown_text_default">#212121</color>
+  <color name="chips_dropdown_text_activated">@android:color/white</color>
+  <color name="chips_dropdown_text_highlighted">#757575</color>
+  <color name="chips_dropdown_permission_text">#4285f4</color>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/list_separator">
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/chat_layout"/>
+
+  <LinearLayout
+    android:id="@+id/chat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageButton
+      android:id="@+id/add_button"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:adjustViewBounds="true"
+      android:background="?selectableItemBackground"
+      android:padding="4dp"
+      android:scaleType="centerInside"
+      android:src="@drawable/ic_input_add"/>
+
+    <ImageButton
+      android:id="@+id/photo_button"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:adjustViewBounds="true"
+      android:background="?selectableItemBackground"
+      android:padding="4dp"
+      android:scaleType="centerInside"
+      android:src="@drawable/ic_input_camera"/>
+
+    <EditText
+      android:id="@+id/message_edittext"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="12dp"
+      android:layout_weight="1"
+      android:background="@null"
+      android:maxLength="200"
+      android:textColor="@color/black87"
+      android:textSize="12sp"/>
+
+    <Button
+      android:id="@+id/send_button"
+      android:layout_width="52dp"
+      android:layout_height="match_parent"
+      android:adjustViewBounds="true"
+      android:background="?selectableItemBackground"
+      android:enabled="false"
+      android:scaleType="centerInside"
+      android:text="@string/chat_send"
+      android:textColor="@color/colorPrimary"/>
+
+  </LinearLayout>
+
+  <RelativeLayout
+    android:id="@+id/merchandise_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/chat_layout"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <ImageView
+      android:id="@+id/merchandise_imageview"
+      android:layout_width="50dp"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="16dp"
+      android:adjustViewBounds="true"/>
+
+    <TextView
+      android:id="@+id/merchandise_title_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:layout_toLeftOf="@+id/merchandise_close_button"
+      android:layout_toRightOf="@+id/merchandise_imageview"
+      android:text="title"
+      android:textColor="@color/black87"
+      android:textSize="12sp"/>
+
+    <TextView
+      android:id="@+id/merchandise_desc_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@id/merchandise_title_textview"
+      android:layout_alignRight="@id/merchandise_title_textview"
+      android:layout_below="@id/merchandise_title_textview"
+      android:textColor="@color/black54"
+      android:textSize="10sp"/>
+
+    <ImageButton
+      android:id="@+id/merchandise_close_button"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="8dp"
+      android:background="?selectableItemBackground"
+      android:src="@drawable/ic_close"/>
+
+  </RelativeLayout>
+
+</RelativeLayout>

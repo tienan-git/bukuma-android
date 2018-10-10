@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/amount_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:input="decimal"
+      app:limit="7"
+      app:title="@string/money_confirm_input_amount"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/sale_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:editable="false"
+      app:title="@string/money_confirm_input_sale"/>
+
+    <TextView
+      android:id="@+id/money_confirm_footer_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_separator"
+      android:padding="16dp"
+      android:text="@string/money_confirm_footer"
+      android:textSize="12sp"/>
+
+  </LinearLayout>
+
+</ScrollView>

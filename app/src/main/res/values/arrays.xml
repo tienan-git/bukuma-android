@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- navigation menu -->
+  <string-array name="navigation_items">
+    <item>@string/navigation_home</item>
+    <item>@string/navigation_news</item>
+    <item>@string/navigation_like</item>
+    <item>@string/navigation_sell</item>
+    <item>@string/navigation_cart</item>
+    <item>@string/navigation_setting</item>
+    <item>@string/navigation_howto</item>
+    <item>@string/navigation_contact</item>
+    <item>@string/navigation_invite</item>
+  </string-array>
+  <array name="navigation_icons">
+    <item>@drawable/ic_dw_home</item>
+    <item>@drawable/ic_dw_envelop</item>
+    <item>@drawable/ic_dw_like</item>
+    <item>@drawable/ic_dw_shop</item>
+    <item>@drawable/ic_dw_cart</item>
+    <item>@drawable/ic_dw_cog</item>
+    <item>@drawable/ic_dw_hat</item>
+    <item>@drawable/ic_dw_mail</item>
+    <item>@drawable/ic_dw_heart</item>
+  </array>
+
+  <!-- gender -->
+  <string-array name="gender_array">
+    <item>@string/gender_none</item>
+    <item>@string/gender_male</item>
+    <item>@string/gender_female</item>
+    <item>@string/gender_other</item>
+  </string-array>
+
+  <!-- report topic -->
+  <string-array name="report_topic_array">
+    <item>@string/report_topic_1</item>
+    <item>@string/report_topic_2</item>
+    <item>@string/report_topic_3</item>
+    <item>@string/report_topic_4</item>
+    <item>@string/report_topic_5</item>
+    <item>@string/report_topic_6</item>
+  </string-array>
+
+  <!-- report type -->
+  <string-array name="report_type_array">
+    <item>@string/report_type_1</item>
+    <item>@string/report_type_2</item>
+    <item>@string/report_type_3</item>
+    <item>@string/report_type_4</item>
+  </string-array>
+
+  <!-- Bank account type -->
+  <string-array name="bank_account_type_array">
+    <item>@string/money_request_account_normal</item>
+    <item>@string/money_request_account_checking</item>
+    <item>@string/money_request_account_saving</item>
+  </string-array>
+
+  <!-- Book conditions -->
+  <string-array name="book_status_array">
+    <item>@string/book_status_new</item>
+    <item>@string/book_status_good</item>
+    <item>@string/book_status_fair</item>
+    <item>@string/book_status_defect</item>
+    <item>@string/book_status_no</item>
+  </string-array>
+
+  <!-- Merchandise Ship providers -->
+  <string-array name="merchandise_shipway_array">
+    <item>@string/merchandise_ship_provider_1</item>
+    <item>@string/merchandise_ship_provider_2</item>
+    <item>@string/merchandise_ship_provider_3</item>
+    <item>@string/merchandise_ship_provider_4</item>
+    <item>@string/merchandise_ship_provider_5</item>
+    <item>@string/merchandise_ship_provider_6</item>
+    <item>@string/merchandise_ship_provider_7</item>
+    <item>@string/merchandise_ship_provider_8</item>
+  </string-array>
+
+  <!-- Ship days -->
+  <string-array name="publish_shipin_array">
+    <item>@string/publish_ship_in_1</item>
+    <item>@string/publish_ship_in_2</item>
+    <item>@string/publish_ship_in_3</item>
+  </string-array>
+
+  <!-- Ship days text -->
+  <string-array name="publish_shipin_text_array">
+    <item>@string/publish_ship_in_1</item>
+    <item>@string/publish_ship_in_2</item>
+    <item>@string/publish_ship_in_3</item>
+    <item>@string/publish_ship_in_4</item>
+  </string-array>
+
+</resources>

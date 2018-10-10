@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_separator"
+      android:padding="16dp"
+      android:text="@string/money_request_header"
+      android:textSize="12sp"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/bank_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:hint="@string/money_request_input_bank_hint"
+      app:title="@string/money_request_input_bank"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/type_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:entries="@array/bank_account_type_array"
+      app:title="@string/money_request_input_account"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/branch_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:hint="@string/money_request_input_branch_hint"
+      app:input="decimal"
+      app:limit="3"
+      app:title="@string/money_request_input_branch"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/accountno_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:hint="@string/money_request_input_accountno_hint"
+      app:input="decimal"
+      app:limit="7"
+      app:title="@string/money_request_input_accountno"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/firstname_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:hint="@string/money_request_input_firstname_hint"
+      app:title="@string/money_request_input_firstname"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/lastname_form"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:hint="@string/money_request_input_lastname_hint"
+      app:title="@string/money_request_input_lastname"/>
+
+  </LinearLayout>
+</ScrollView>

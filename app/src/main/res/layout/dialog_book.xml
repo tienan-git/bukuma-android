@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@android:color/white"
+  android:clipToPadding="false">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+      android:id="@+id/cover_imageview"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"/>
+
+    <TextView
+      android:id="@+id/title_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:gravity="center"
+      android:text="title"
+      android:textColor="@color/black87"
+      android:textSize="16sp"/>
+
+    <TextView
+      android:id="@+id/description_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:gravity="center"
+      android:text="@string/scanner_dialog_book_found"
+      android:textColor="@color/black54"
+      android:textSize="12sp"/>
+
+    <Button
+      android:id="@+id/sell_button"
+      android:layout_width="match_parent"
+      android:layout_height="32dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/background_button_primary"
+      android:text="@string/scanner_dialog_book_sell"
+      android:textColor="@android:color/white"
+      android:textSize="12sp"/>
+
+    <Button
+      android:id="@+id/scan_button"
+      android:layout_width="match_parent"
+      android:layout_height="32dp"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/background_button_grey_border"
+      android:text="@string/scanner_dialog_book_scan"
+      android:textColor="@color/black54"
+      android:textSize="12sp"/>
+
+  </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/background_button_white"
+  android:clipToPadding="false"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+      android:id="@+id/icon_imageview"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_marginRight="16dp"
+      android:src="@drawable/ic_set_profile"/>
+
+    <TextView
+      android:id="@+id/textview"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_weight="1"
+      android:text="@string/setting_user_profile"
+      android:textColor="@color/black54"/>
+
+    <TextView
+      android:id="@+id/state"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="8dp"
+      android:text=""
+      android:textColor="@color/black26"
+      android:textSize="12sp"/>
+
+    <Switch
+      android:id="@+id/switzh"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+    <ImageView
+      android:id="@+id/disclosure_icon"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_marginRight="-10dp"
+      android:src="@drawable/ic_to"/>
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/list_separator"/>
+
+</LinearLayout>

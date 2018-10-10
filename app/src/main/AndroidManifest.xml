@@ -1,0 +1,170 @@
+<manifest package="jp.com.labit.bukuma"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- normal permission -->
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+  <!-- danger permission -->
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+  <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+  <application
+    android:name=".BukumaApplication"
+    android:allowBackup="true"
+    android:supportsRtl="false"
+    android:theme="@style/AppTheme">
+
+    <activity
+      android:name=".ui.activity.MainActivity"
+      android:launchMode="singleTop"
+      android:theme="@style/AppTheme.NoActionBar"
+      android:windowSoftInputMode="adjustPan">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name=".ui.activity.ScannerActivity"
+      android:theme="@style/AppTheme.NoActionBar"/>
+
+    <activity
+      android:name=".ui.activity.BookActivity"
+      android:theme="@style/AppTheme.NoActionBar"
+      android:windowSoftInputMode="adjustResize"/>
+
+    <activity
+      android:name=".ui.activity.ProfileActivity"
+      android:theme="@style/AppTheme.NoActionBar"/>
+
+    <activity
+      android:name=".ui.activity.ImageViewerActivity"
+      android:theme="@style/AppTheme.NoActionBar"/>
+
+    <activity android:name=".ui.activity.WebActivity"/>
+    <activity android:name=".ui.activity.RegisterActivity"/>
+    <activity android:name=".ui.activity.RegisterPhoneActivity"/>
+    <activity android:name=".ui.activity.RegisterSmsActivity"/>
+    <activity android:name=".ui.activity.LoginActivity"/>
+    <activity android:name=".ui.activity.LoginResetActivity"/>
+    <activity android:name=".ui.activity.ProfileEditActivity"/>
+    <activity android:name=".ui.activity.ChatActivity"/>
+    <activity android:name=".ui.activity.PurchaseActivity"/>
+    <activity android:name=".ui.activity.PublishActivity"/>
+    <activity android:name=".ui.activity.TransactionActivity"/>
+    <activity android:name=".ui.activity.CategoryActivity"/>
+    <activity android:name=".ui.activity.ActivitiesActivity"/>
+    <activity android:name=".ui.activity.TodoActivity"/>
+    <activity android:name=".ui.activity.SearchActivity"/>
+    <activity android:name=".ui.activity.SearchResultActivity"/>
+    <activity android:name=".ui.activity.MerchandiseChooserActivity"/>
+    <activity android:name=".ui.activity.TimelineActivity"/>
+    <activity android:name=".ui.activity.drawer.NewsActivity"/>
+    <activity android:name=".ui.activity.drawer.ReportActivity"/>
+    <activity android:name=".ui.activity.drawer.LikeActivity"/>
+    <activity android:name=".ui.activity.drawer.SellingActivity"/>
+    <activity android:name=".ui.activity.drawer.BoughtActivity"/>
+    <activity android:name=".ui.activity.drawer.FrequentlyQuestionsActivity"/>
+    <activity android:name=".ui.activity.setting.SettingActivity"/>
+    <activity android:name=".ui.activity.setting.SettingEmailActivity"/>
+    <activity android:name=".ui.activity.setting.EmailUpdateActivity"/>
+    <activity android:name=".ui.activity.setting.PasswordUpdateActivity"/>
+    <activity android:name=".ui.activity.setting.MoneyActivity"/>
+    <activity android:name=".ui.activity.setting.MoneyRequestActivity"/>
+    <activity android:name=".ui.activity.setting.MoneyConfirmActivity"/>
+    <activity android:name=".ui.activity.setting.PointActivity"/>
+    <activity android:name=".ui.activity.setting.NotificationSettingActivity"/>
+    <activity android:name=".ui.activity.setting.BlockActivity"/>
+    <activity android:name=".ui.activity.setting.AddressActivity"/>
+    <activity android:name=".ui.activity.setting.AddressEditActivity"/>
+    <activity android:name=".ui.activity.setting.CreditCardActivity"/>
+    <activity android:name=".ui.activity.setting.CreditCardEditActivity"/>
+    <activity android:name=".ui.activity.setting.PointTransactionActivity"/>
+    <activity android:name=".ui.activity.setting.AccountDeleteActivity"/>
+    <activity
+      android:name=".ui.activity.drawer.InviteActivity"
+      android:theme="@style/AppTheme.NoActionBar"/>
+
+    <!-- facebook -->
+    <meta-data
+      android:name="com.facebook.sdk.ApplicationId"
+      android:value="@string/facebook_app_id"/>
+    <activity
+      android:name="com.facebook.FacebookActivity"
+      android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+      android:label="@string/app_name"/>
+
+    <!-- file allow access for camera -->
+    <provider
+      android:name="android.support.v4.content.FileProvider"
+      android:authorities="${applicationId}.provider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths"/>
+    </provider>
+
+    <!-- Referrer -->
+    <receiver
+      android:name=".analytic.ReferrerReceiver"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="com.android.vending.INSTALL_REFERRER" />
+      </intent-filter>
+    </receiver>
+
+    <!-- Fabric -->
+    <meta-data
+      android:name="io.fabric.ApiKey"
+      android:value="04c761e63d01ab6fffde554c010a7861ae890b40"/>
+
+    <!-- AppFlyer -->
+    <receiver
+      android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="com.android.vending.INSTALL_REFERRER"/>
+      </intent-filter>
+    </receiver>
+
+    <!-- Firebase -->
+    <service
+      android:name=".fcm.InstanceIdService"
+      android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+      </intent-filter>
+    </service>
+
+    <service
+      android:name=".fcm.MessagingService"
+      android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+
+    <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more. -->
+    <meta-data
+      android:name="com.google.firebase.messaging.default_notification_icon"
+      android:resource="@drawable/ic_push"/>
+    <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+         notification message. See README(https://goo.gl/6BKBk7) for more. -->
+    <meta-data
+      android:name="com.google.firebase.messaging.default_notification_color"
+      android:resource="@color/colorPrimary"/>
+
+    <!-- Set barcode detection -->
+    <meta-data
+      android:name="com.google.android.gms.vision.DEPENDENCIES"
+      android:value="barcode"/>
+
+  </application>
+
+</manifest>

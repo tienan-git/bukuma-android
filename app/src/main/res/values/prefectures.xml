@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="place_hokkaido">北海道</string>
+  <string name="place_aomori">青森県</string>
+  <string name="place_iwate">岩手県</string>
+  <string name="place_miyagi">宮城県</string>
+  <string name="place_akita">秋田県</string>
+  <string name="place_yamagata">山形県</string>
+  <string name="place_fukushima">福島県</string>
+  <string name="place_ibaraki">茨城県</string>
+  <string name="place_tochigi">栃木県</string>
+  <string name="place_gunma">群馬県</string>
+  <string name="place_saitama">埼玉県</string>
+  <string name="place_chiba">千葉県</string>
+  <string name="place_tokyo">東京都</string>
+  <string name="place_kanagawa">神奈川県</string>
+  <string name="place_niigata">新潟県</string>
+  <string name="place_toyama">富山県</string>
+  <string name="place_ishikawa">石川県</string>
+  <string name="place_fukui">福井県</string>
+  <string name="place_yamanashi">山梨県</string>
+  <string name="place_nagano">長野県</string>
+  <string name="place_gifu">岐阜県</string>
+  <string name="place_shizuoka">静岡県</string>
+  <string name="place_aichi">愛知県</string>
+  <string name="place_mie">三重県</string>
+  <string name="place_shiga">滋賀県</string>
+  <string name="place_kyoto">京都府</string>
+  <string name="place_osaka">大阪府</string>
+  <string name="place_hyogo">兵庫県</string>
+  <string name="place_nara">奈良県</string>
+  <string name="place_wakayama">和歌山県</string>
+  <string name="place_tottori">鳥取県</string>
+  <string name="place_shimane">島根県</string>
+  <string name="place_okayama">岡山県</string>
+  <string name="place_hiroshima">広島県</string>
+  <string name="place_yamaguchi">山口県</string>
+  <string name="place_tokushima">徳島県</string>
+  <string name="place_kagawa">香川県</string>
+  <string name="place_ehime">愛媛県</string>
+  <string name="place_kochi">高知県</string>
+  <string name="place_fukuoka">福岡県</string>
+  <string name="place_saga">佐賀県</string>
+  <string name="place_nagasaki">長崎県</string>
+  <string name="place_kumamoto">熊本県</string>
+  <string name="place_oita">大分県</string>
+  <string name="place_miyazaki">宮崎県</string>
+  <string name="place_kagoshima">鹿児島県</string>
+  <string name="place_okinawa">沖縄県</string>
+  <string name="place_oversea">海外</string>
+
+  <string-array name="prefectures">
+    <item>@string/place_tokyo</item>
+    <item>@string/place_hokkaido</item>
+    <item>@string/place_aomori</item>
+    <item>@string/place_iwate</item>
+    <item>@string/place_miyagi</item>
+    <item>@string/place_akita</item>
+    <item>@string/place_yamagata</item>
+    <item>@string/place_fukushima</item>
+    <item>@string/place_ibaraki</item>
+    <item>@string/place_tochigi</item>
+    <item>@string/place_gunma</item>
+    <item>@string/place_saitama</item>
+    <item>@string/place_chiba</item>
+    <item>@string/place_kanagawa</item>
+    <item>@string/place_niigata</item>
+    <item>@string/place_toyama</item>
+    <item>@string/place_ishikawa</item>
+    <item>@string/place_fukui</item>
+    <item>@string/place_yamanashi</item>
+    <item>@string/place_nagano</item>
+    <item>@string/place_gifu</item>
+    <item>@string/place_shizuoka</item>
+    <item>@string/place_aichi</item>
+    <item>@string/place_mie</item>
+    <item>@string/place_shiga</item>
+    <item>@string/place_kyoto</item>
+    <item>@string/place_osaka</item>
+    <item>@string/place_hyogo</item>
+    <item>@string/place_nara</item>
+    <item>@string/place_wakayama</item>
+    <item>@string/place_tottori</item>
+    <item>@string/place_shimane</item>
+    <item>@string/place_okayama</item>
+    <item>@string/place_hiroshima</item>
+    <item>@string/place_yamaguchi</item>
+    <item>@string/place_tokushima</item>
+    <item>@string/place_kagawa</item>
+    <item>@string/place_ehime</item>
+    <item>@string/place_kochi</item>
+    <item>@string/place_fukuoka</item>
+    <item>@string/place_saga</item>
+    <item>@string/place_nagasaki</item>
+    <item>@string/place_kumamoto</item>
+    <item>@string/place_oita</item>
+    <item>@string/place_miyazaki</item>
+    <item>@string/place_kagoshima</item>
+    <item>@string/place_okinawa</item>
+    <item>@string/place_oversea</item>
+  </string-array>
+</resources>

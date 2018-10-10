@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@android:color/white"
+  android:clipToPadding="false">
+
+  <ImageView
+    android:id="@+id/cover_imageview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:src="@drawable/img_bg_publish"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/cover_imageview"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+      android:id="@+id/title_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:gravity="center"
+      android:text="@string/publish_success_dialog_title"
+      android:textColor="@color/black87"
+      android:textSize="16sp"/>
+
+    <TextView
+      android:id="@+id/description_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:gravity="center"
+      android:text="@string/publish_success_dialog_description"
+      android:textColor="@color/black54"
+      android:textSize="12sp"/>
+
+    <Button
+      android:id="@+id/continue_button"
+      android:layout_width="match_parent"
+      android:layout_height="32dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/background_button_primary"
+      android:text="@string/publish_success_dialog_continue_button"
+      android:textColor="@android:color/white"
+      android:textSize="12sp"/>
+
+    <Button
+      android:id="@+id/share_button"
+      android:layout_width="match_parent"
+      android:layout_height="32dp"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/background_button_grey_border"
+      android:text="@string/publish_success_dialog_share_button"
+      android:textColor="@color/black54"
+      android:textSize="12sp"/>
+
+    <Button
+      android:id="@+id/back_button"
+      android:layout_width="match_parent"
+      android:layout_height="32dp"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/background_button_white"
+      android:stateListAnimator="@null"
+      android:text="@string/publish_success_dialog_back_button"
+      android:textColor="@color/black54"
+      android:textSize="12sp"
+      tools:ignore="UnusedAttribute"/>
+
+  </LinearLayout>
+</RelativeLayout>

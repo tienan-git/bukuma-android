@@ -1,0 +1,14 @@
+<manifest package="jp.com.labit.bukuma"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <application
+    android:icon="@mipmap/ic_launcher_dev"
+    android:label="@string/app_name_dev">
+
+    <meta-data
+      android:name="io.fabric.ApiKey"
+      android:value="04c761e63d01ab6fffde554c010a7861ae890b40"/>
+
+  </application>
+
+</manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:background="@android:color/white">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="#F7EDE1">
+
+    <ImageView
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:src="@drawable/an_search_loope"
+      android:layout_marginTop="8dp"
+      android:layout_gravity="center"/>
+
+    <view
+      android:id="@+id/focus_view"
+      class="jp.com.labit.bukuma.ui.dialog.SearchingDialog$AnimationView"
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:layout_gravity="center"/>
+
+  </FrameLayout>
+
+  <TextView
+    android:id="@+id/title_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    android:text="@string/search_dialog_title"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    android:textStyle="bold"/>
+
+  <TextView
+    android:id="@+id/desc_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:gravity="center"
+    android:text="@string/search_dialog_description"
+    android:textColor="@color/black54"
+    android:textSize="12sp"/>
+
+</LinearLayout>

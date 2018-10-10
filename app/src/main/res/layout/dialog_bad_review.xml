@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/cardview_light_background">
+
+	<include layout="@layout/dialog_header"/>
+  
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/list_separator"/>
+  
+	<Button
+		android:id="@+id/back_home"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/cardview_light_background"
+		android:text="aaa"
+		android:textColor="@color/grey_selected_button"
+		android:textSize="12sp"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@android:color/transparent"
+  android:orientation="vertical">
+
+  <include layout="@layout/chat_date"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="16dp"
+    android:paddingTop="4dp">
+
+    <jp.com.labit.bukuma.ui.custom.TriangleView
+      android:id="@+id/triangle"
+      android:layout_width="12dp"
+      android:layout_height="12dp"
+      android:layout_alignParentRight="true"
+      android:layout_marginLeft="-4dp"
+      android:background="@color/colorPrimary"
+      android:tag="right"/>
+
+    <FrameLayout
+      android:id="@+id/content_layout"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/triangle"
+      android:background="@drawable/background_chat_right"
+      android:minHeight="26dp"
+      android:minWidth="30dp">
+
+      <ViewStub
+        android:id="@+id/stub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/stub_view"/>
+
+    </FrameLayout>
+
+    <TextView
+      android:id="@+id/time_textview"
+      android:layout_width="30dp"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/content_layout"
+      android:layout_marginRight="4dp"
+      android:layout_toLeftOf="@+id/content_layout"
+      android:text="00:00"
+      android:textColor="@color/black54"
+      android:textSize="10sp"/>
+
+    <ImageView
+      android:id="@+id/status_imageview"
+      android:layout_width="8dp"
+      android:layout_height="8dp"
+      android:layout_above="@id/time_textview"
+      android:layout_alignRight="@id/time_textview"
+      android:src="@drawable/ic_chat_sending_arrow"/>
+
+  </RelativeLayout>
+</LinearLayout>

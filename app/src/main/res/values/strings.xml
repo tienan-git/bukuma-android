@@ -1,0 +1,806 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">ブクマ！</string>
+  <string name="app_name_dev">ブクマ！DEV</string>
+  <string name="facebook_app_id">941172442617747</string>
+  <string name="url_term">http://static.bukuma.io/bkm_app/terms-of-use.html</string>
+  <string name="url_privacy">http://static.bukuma.io/bkm_app/privacy-policy.html</string>
+  <string name="url_commercial">http://static.bukuma.io/bkm_app/s-c-t-l.html</string>
+  <string name="url_licence">http://static.bukuma.io/bkm_app/licence_android.html</string>
+  <string name="url_delivery">http://static.bukuma.io/bkm_app/guide/delivery_compare.html</string>
+  <string name="url_packaging_method">http://static.bukuma.io/bkm_app/guide/sell.html#section02-02</string>
+  <string name="url_trouble_with_trading">http://static.bukuma.io/bkm_app/faq.html#section2</string>
+  <string name="url_price">http://static.bukuma.io/bkm_app/faq.html#section1-01</string>
+  <string name="url_flow">http://static.bukuma.io/bkm_app/guide/flow.html</string>
+
+  <!-- frequently questions url -->
+  <string name="url_freight">http://static.bukuma.io/bkm_app/faq.html#section1-04</string>
+  <string name="url_pay">http://static.bukuma.io/bkm_app/faq.html#section1-07</string>
+  <string name="url_edit_or_delete">http://static.bukuma.io/bkm_app/faq.html#section1-13</string>
+  <string name="url_notification">http://static.bukuma.io/bkm_app/faq.html#section1-16</string>
+  <string name="url_evaluation">http://static.bukuma.io/bkm_app/faq.html#section2-01</string>
+  <string name="url_cancel">http://static.bukuma.io/bkm_app/faq.html#section2-02</string>
+  <string name="url_different">http://static.bukuma.io/bkm_app/faq.html#section2-07</string>
+
+  <!-- Common -->
+  <string name="error">エラー</string>
+  <string name="ok">OK</string>
+  <string name="cancel">キャンセル</string>
+  <string name="close">閉じる</string>
+  <string name="send">送信</string>
+  <string name="done">完了</string>
+  <string name="block">ブロック</string>
+  <string name="report">通報する</string>
+  <string name="not_done">未完了</string>
+  <string name="next">次へ</string>
+  <string name="loading">読み込み中…</string>
+  <string name="error_tryagain">エラーが発生しました、もう一度試してください</string>
+  <string name="empty">未入力</string>
+  <string name="empty_optional">未入力(任意)</string>
+  <string name="nickname">ニックネーム</string>
+  <string name="gender">性別</string>
+  <string name="email_address">メールアドレス</string>
+  <string name="password">パスワード</string>
+  <string name="password_confirm">パスワード確認</string>
+  <string name="invitation_code">招待コード</string>
+  <string name="choose_photo">画像を選択</string>
+  <string name="money_unit">¥%,d</string>
+  <string name="discount">%1$d％OFF</string>
+  <string name="gender_male">男性</string>
+  <string name="gender_female">女性</string>
+  <string name="gender_other">無回答/その他</string>
+  <string name="gender_none">選択なし</string>
+
+  <string name="dialog_phone_not_verify_message">電話番号を認証していません</string>
+  <string name="dialog_phone_not_verify_ok">認証する</string>
+  <string name="dialog_update_title">アップデート情報</string>
+  <string name="dialog_update_message">新しいバージョンのブクマ！が公開されました。\n最新版にアップデートしてください。</string>
+  <string name="dialog_update_now">アップデート</string>
+  <string name="dialog_update_later">今はしない</string>
+
+  <!-- maintenance dialog -->
+  <string name="dialog_maintenance_title">ただいまメンテナンス中です</string>
+  <string name="dialog_maintenance_description">メンテナンス終了まで数時間かかる場合がございます。少々お待ちください</string>
+  <string name="dialog_maintenance_button">詳細を確認する</string>
+
+  <!-- activity title -->
+  <string name="title_notification">お知らせ</string>
+  <string name="title_todo">取引一覧</string>
+  <string name="title_login">ログイン</string>
+  <string name="title_login_reset">パスワードのリセット</string>
+  <string name="title_register">会員登録</string>
+  <string name="title_register_phone">電話番号の確認</string>
+  <string name="title_profile_edit">プロフィール設定</string>
+  <string name="title_setting_mail">メールとパスワード</string>
+  <string name="title_email_update">メールの編集</string>
+  <string name="title_password_update">パスワードの編集</string>
+  <string name="title_money">売上確認・振込手続き</string>
+  <string name="title_money_request">口座指定</string>
+  <string name="title_money_confirm">振込申請金額を入力</string>
+  <string name="title_point">ポイント</string>
+  <string name="title_notification_setting">通知設定</string>
+  <string name="title_block">ブロックリスト</string>
+  <string name="title_address">お届け先住所</string>
+  <string name="title_address_edit">お届け先情報</string>
+  <string name="title_creditcard">クレジットカード情報</string>
+  <string name="title_creditcard_title">クレジットカードの追加</string>
+  <string name="title_activities">お知らせ</string>
+  <string name="title_purchase">購入手続き</string>
+  <string name="title_transaction">取引画面</string>
+  <string name="title_point_transaction">履歴</string>
+  <string name="title_publish">商品を出品する</string>
+
+  <!-- login -->
+  <string name="login_title">会員登録で%dポイント贈呈中！</string>
+  <string name="login_description">新規ダウンロードキャンペーン中。アカウント登録で%dポイントをプレゼントしています。</string>
+  <string name="login_facebook">Facebookで登録/ログイン</string>
+  <string name="login_email">メールアドレスでログイン</string>
+  <string name="register_email">メールアドレスで登録</string>
+  <string name="login_dialog_register">すでにアカウントをお持ちの方はこちら</string>
+  <string name="login_dialog_login">ログインせず新たに登録する</string>
+  <string name="login_dialog_error">ログイン失敗しました。もう一度お試し下さい</string>
+  <string name="login_dialog_success">ログインに成功しました</string>
+  <string name="login_reset_password">パスワードを忘れた方は<a href="forgot">こちら</a></string>
+  <string name="login_reset_password_hint">現在のメールアドレス</string>
+  <string name="login_reset_password_confirm_message">パスワードをリセットし、再設定用のメールを送信しますか?</string>
+  <string name="login_reset_password_success_title">パスワードをリセットしました。</string>
+  <string name="login_reset_password_success_message">再設定用のメールを送信しましたので、ご確認ください</string>
+  <string name="login_reset_password_error_email_empty">メールアドレスを入力してください</string>
+  <string name="login_reset_password_error_email_invalid">不正なメールアドレスです</string>
+  <string name="login_reset_password_error">ユーザーが見つかりません</string>
+
+  <!-- invite -->
+  <string name="invite_finished_title">レビューを送信しました</string>
+  <string name="invite_finished_good_title">取引相手の評価を送信しました</string>
+  <string name="invite_review_title">よろしければアプリのレビューにご協力ください</string>
+  <string name="invite_review_desc">一言でも感想いただけると開発の励みになります！</string>
+  <string name="invite_review_button">ストアにレビューを書いてみる</string>
+  <string name="invite_description">取引終了です！お疲れさまでした！</string>
+  <string name="invite_friend">友達にブクマ！を紹介する</string>
+  <string name="invite_back_home">ホームに戻る</string>
+  <string name="invite_none_button">今後表示させない</string>
+  <string name="invite_late_button">後でレビューする</string>
+
+  <!-- Navigation Item -->
+  <string name="navigation_home">ホーム</string>
+  <string name="navigation_news">運営からのお知らせ</string>
+  <string name="navigation_like">いいねした商品</string>
+  <string name="navigation_sell">出品中の商品</string>
+  <string name="navigation_cart">購入した商品</string>
+  <string name="navigation_setting">設定</string>
+  <string name="navigation_howto">ブクマ！の使い方</string>
+  <string name="navigation_contact">お問い合わせ</string>
+  <string name="navigation_invite">ブクマ！に友達を招待</string>
+
+  <!-- search -->
+  <string name="search_history_title">検索履歴</string>
+  <string name="search_history_clear">検索履歴を消す</string>
+  <string name="search_history_clear_dialog_message">検索履歴を消しますか?</string>
+  <string name="search_history_clear_dialog_ok">消去する</string>
+  <string name="search_dialog_title">情報を取得しています</string>
+  <string name="search_dialog_description">取得まで数分かかることがあります</string>
+  <string name="search_category_all">全て</string>
+  <string name="search_empty_title">表示するコンテンツがありません</string>
+  <string name="search_empty_description">表示するコンテンツがありません</string>
+
+  <!-- barcode scanner -->
+  <string name="scanner_search">直接タイトル入力</string>
+  <string name="scanner_description">978 - から始まるバーコードを読み取ります</string>
+  <string name="scanner_dialog_tutorial_title">バーコードで簡単出品</string>
+  <string name="scanner_dialog_tutorial_description">本の背面にある97で始まるバーコードを読み取ると、簡単に出品できます</string>
+  <string name="scanner_dialog_tutorial_ok">OK、わかりました</string>
+  <string name="scanner_dialog_not_found">このISBNに対応した本の情報が取得できませんでした</string>
+  <string name="scanner_dialog_book_found">読み込みに成功しました</string>
+  <string name="scanner_dialog_book_sell">この本を出品する</string>
+  <string name="scanner_dialog_book_scan">やり直す</string>
+
+  <!-- report -->
+  <string name="report_device">端末</string>
+  <string name="report_appname">アプリ名</string>
+  <string name="report_appver">バージョン</string>
+  <string name="report_detail">詳細を入力してください</string>
+  <string name="report_topic">トピック</string>
+  <string name="report_environment">動作環境</string>
+  <string name="report_os">OS</string>
+  <string name="report_topic_1">取引について</string>
+  <string name="report_topic_2">購入について</string>
+  <string name="report_topic_3">不適切なユーザー</string>
+  <string name="report_topic_4">不適切な商品</string>
+  <string name="report_topic_5">ユーザーとのトラブル</string>
+  <string name="report_topic_6">その他</string>
+  <string name="report_type_1">不適切な商品を出品している</string>
+  <string name="report_type_2">不適切なメッセージを送ってくる</string>
+  <string name="report_type_3">詐欺行為をしている</string>
+  <string name="report_type_4">その他悪質行為</string>
+
+  <!-- invite -->
+  <string name="invite_title">友達を招待してポイントゲット</string>
+  <string name="invite_dialog_title">友達を招待してポイントをもらおう</string>
+  <string name="invite_description1">ともだちがブクマに会員登録をするときに招待コードを入れると、</string>
+  <string name="invite_description2">あなたと友達両方に%d円分のポイントをプレゼント!! </string>
+  <string name="invite_description3">PlayStoreのレビューで紹介しよう！</string>
+  <string name="invite_code_title">あなたの招待コード</string>
+  <string name="invite_code_empty">まだありません</string>
+  <string name="invite_code_people">現在%,d人に招待されました</string>
+  <string name="invite_code_share">ともだちにシェアする</string>
+  <string name="invite_code_review">レビューに書き込む</string>
+  <string name="invite_share_text">ブクマ!の招待コード[%1$s]\n入力で、今なら%2$dptプレゼント!!\nブクマ！なら中古本を10秒で出品できるよ！\n#ブクマ！</string>
+  <string name="invite_copy_text">タップして招待コードをコピー</string>
+  <string name="invite_button_text">友達を招待する</string>
+
+  <!-- register -->
+  <string name="register_error_nickname_empty">ニックネームが空です</string>
+  <string name="register_error_email_empty">メールアドレスが空です</string>
+  <string name="register_error_email_invalid">メールアドレスが正しくありません</string>
+  <string name="register_error_email_taken">すでに使われているEmailです</string>
+  <string name="register_error_password_empty">passwordが空です</string>
+  <string name="register_error_password_confirm_empty">パスワード確認を入力して下さい</string>
+  <string name="register_error_password_notmatch">passwordが違います</string>
+  <string name="register_error_invite_code_invalid">招待コードが見つかりません。もう一度確認してお試しください。</string>
+  <string name="register_error_gender">性別を選択してください</string>
+
+  <string name="register_phone_header">電話番号を入力してください</string>
+  <string name="register_phone_input_hint">電話番号</string>
+  <string name="register_phone_description_html">ブクマ！アカウントを作成するには、電話番号での認証が必要です。ブクマ！の<a href="term">利用規約</a>および<a href="privacy">プライバシーポリシー</a>に同意の上、”次へ”のボタンをタップしてください。</string>
+
+  <string name="register_sms_header">SMSで届いた認証番号を入力してください\n</string>
+  <string name="register_sms_input_hint">認証番号を再入力</string>
+  <string name="register_sms_description">SMSで確認番号が届くまで1分ほど時間がかかる場合がございます。SMSが届かない場合は、お電話番号をお確かめの上、もう一度電話番号を入力して再度お試しいただくか、音声電話認証をお試しください。</string>
+  <string name="register_sms_phone_again">電話番号を再入力 >></string>
+  <string name="register_sms_by_call">音声電話認証を行う >></string>
+  <string name="register_sms_call_request_confirm_dialog_title">音声電話認証を行いますか？</string>
+  <string name="register_sms_call_request_confirm_dialog_button">行う</string>
+  <string name="register_sms_call_request_success_dialog_title">音声電話リクエストを送信しました</string>
+  <string name="register_sms_call_request_success_dialog_message">電話がかかってくるまで少々お待ちください</string>
+
+  <!-- profile -->
+  <string name="profile_action_chat">メッセージを送る</string>
+  <string name="profile_action_setting">プロフィール設定</string>
+  <string name="profile_edit_bio_hint">何かコメントがある場合はどうぞ</string>
+  <string name="profile_edit_bio_error_empty">コメントが空です</string>
+  <string name="profile_edit_success_message">保存しました！</string>
+  <string name="profile_book_header">%,d件の出品</string>
+  <string name="profile_book_header_thousand">1000+件の出品</string>
+  <string name="profile_review_header">評価一覧</string>
+  <string name="profile_review_fair">少し不安な取引でした</string>
+  <string name="profile_review_bad">取引中にトラブルがありました</string>
+  <string name="profile_review_good">スムーズに取引できました</string>
+  <string name="profile_block_confirm_message">ブロックすると相手とのやりとりの全てが削除されます</string>
+  <string name="profile_block_confirm_ok">ブロック</string>
+  <string name="profile_block_success_message">ブロックしました！</string>
+  <string name="profile_report_type_message">通報理由を選択ください</string>
+  <string name="profile_report_success_title">通報しました！</string>
+  <string name="profile_report_success_message">複雑な問題を解決するためには詳細な情報も必要です。通報の詳細も通報しますか?</string>
+  <string name="profile_report_success_report">詳細に通報する</string>
+  <string name="profile_official_account">認証アカウント</string>
+
+  <!-- activities -->
+  <string name="activities_empty_title">お知らせはまだありません</string>
+  <string name="activities_empty_description">出品した商品にいいねされた場合や、最安値が更新された場合ここに表示されます</string>
+  <string name="activities_text_book_like"><![CDATA[<b>%s</b>にいいねがつきました]]></string>
+  <string name="activities_text_book_price"><![CDATA[<b>%s</b>の最安値が更新されました]]></string>
+  <string name="activities_text_book_merchandise_bought"><![CDATA[<b>%1$s</b>が<b>%2$s</b>を購入しました。]]></string>
+
+  <!-- to do -->
+  <string name="todo_empty_title">現在やることリストはありません</string>
+  <string name="todo_empty_description">取り引きが開始されると、あなたにやってほしいことが表示されます</string>
+  <string name="todo_text_seller_initial">本を出品しました。購入されるまでお待ち下さい</string>
+  <string name="todo_text_buyer_seller_prepare"><![CDATA[<b>%s</b>の発送待ちです。発送までお待ち下さい。]]></string>
+  <string name="todo_text_seller_seller_prepare_title">本の発送準備を行いましょう。</string>
+  <string name="todo_text_seller_seller_prepare"><![CDATA[<b>%1$s</b>が<b>%2$s</b>を購入しました。]]></string>
+  <string name="todo_text_buyer_shipped"><![CDATA[<b>%s</b>が本を発送しました。<br>到着まで今しばらくお待ちください。]]></string>
+  <string name="todo_text_buyer_shipped_title">届いたら受け取り連絡をしてください。</string>
+  <string name="todo_text_seller_shipped"><![CDATA[<b>%s</b>の受け取り待ちです。]]></string>
+  <string name="todo_text_buyer_arrived"><![CDATA[<b>%s</b>がレビューを書いています。取引終了までお待ち下さい。]]></string>
+  <string name="todo_text_seller_arrived_title">レビューを書いて取引を完了してください。</string>
+  <string name="todo_text_seller_arrived"><![CDATA[<b>%s</b>が本を受け取りました。<br>購入者のレビューを書きましょう。]]></string>
+  <string name="todo_text_seller_review">購入者へレビューを送信しました。取引完了までお待ち下さい</string>
+  <string name="todo_text_buyer_finished">相手がレビューを書きました。取引が完了しました</string>
+  <string name="todo_text_seller_finished">取引が完了しました。</string>
+  <string name="todo_text_staff_pending">本取引はキャンセルされました。運営からのご連絡をお待ち下さい。</string>
+  <string name="todo_text_header_self">やることリスト</string>
+  <string name="todo_text_header_partner">相手の対応待ち</string>
+
+  <!-- settings -->
+  <string name="setting_user_title">ユーザー情報</string>
+  <string name="setting_user_profile">プロフィール</string>
+  <string name="setting_user_address">住所</string>
+  <string name="setting_user_payment">支払い方法</string>
+  <string name="setting_user_info">メール・パスワード</string>
+  <string name="setting_user_phone">電話番号の確認</string>
+  <string name="setting_sale_title">売上・ポイント</string>
+  <string name="setting_sale_money_request">売上・振込申請</string>
+  <string name="setting_sale_point">ポイント</string>
+  <string name="setting_sale_history">取引・ポイント履歴</string>
+  <string name="setting_other_title">その他の設定</string>
+  <string name="setting_other_pushnoti">通知設定</string>
+  <string name="setting_other_block">ブロックリスト</string>
+  <string name="setting_other_delete_user">退会する</string>
+  <string name="setting_term_title">規約</string>
+  <string name="setting_term_term">利用規約</string>
+  <string name="setting_term_privacy">プライバシーポリシー</string>
+  <string name="setting_term_commercial">特定商取引法</string>
+  <string name="setting_term_licence">ライセンス</string>
+  <string name="setting_phone_update_confirm_message">現在の電話番号：%sを変更しますか？</string>
+  <string name="setting_phone_update_confirm_ok">変更する</string>
+  <string name="setting_phone_update_confirm_cancel">いいえ</string>
+
+  <!-- frequently questions -->
+  <string name="frequently_questions_header_title">お問い合わせの前にご確認ください</string>
+  <string name="frequently_questions_header_description">よくある質問をぜひご確認ください。\nそれでも解決しない場合はご連絡ください。</string>
+  <string name="frequently_questions_title">よくある質問</string>
+  <string name="frequently_questions_freight">着払いで出品することはできるの？</string>
+  <string name="frequently_questions_pay">支払い方法は何がありますか？</string>
+  <string name="frequently_questions_edit_or_delete">商品の編集・削除はどうしたらいいですか？</string>
+  <string name="frequently_questions_notification">発送通知が来ましたが、商品が届きません。</string>
+  <string name="frequently_questions_evaluation">購入者から受け取り評価をしてもらえません。</string>
+  <string name="frequently_questions_cancel">取引をキャンセルしたい。</string>
+  <string name="frequently_questions_different">説明文と違う/不備のある商品が届いた。</string>
+  <string name="frequently_questions_different_part">解決しない場合</string>
+  <string name="frequently_questions_contact">運営にお問い合わせする</string>
+
+  <!-- delete user -->
+  <string name="delete_user_title">ブクマ！を退会する</string>
+  <string name="delete_user_description">ブクマを退会する理由をご選択してください。</string>
+  <string name="delete_user_button">退会する</string>
+  <string name="delete_user_comment_hint">ブクマへのご意見・ご要望がございましたらご自由にご記入ください。</string>
+  <string name="delete_user_confirm_title">本当に退会しますか？</string>
+  <string name="delete_user_confirm_message">退会すると全てのデータが\n消えてしまいます。\n退会後6ヵ月間、再登録ができなくなりますのでご注意ください。</string>
+  <string name="delete_user_confirm_point">!ポイントが%,dpt残っています!</string>
+  <string name="delete_user_confirm_ok">退会</string>
+  <string name="delete_user_success_title">退会しました</string>
+  <string name="delete_user_success_message">いままでご利用ありがとうございました！\nまたのご利用をお待ちしております！</string>
+  <string name="delete_user_error_not_allow">取引中の商品があるため退会できません</string>
+  <string name="delete_user_error_not_select">退会理由を選択してください</string>
+  
+  <!-- delete user reason major item -->
+  <string name="delete_user_reason_no_book">出品が少ない</string>
+  <string name="delete_user_reason_cant_sell">出品した本が売れない</string>
+  <string name="delete_user_reason_user_trouble">取引に不安がある</string>
+  <string name="delete_user_reason_not_to_understand">使い方が分からない</string>
+  <string name="delete_user_reason_hard_to_use">アプリが使いにくい</string>
+  <string name="delete_user_reason_no_use">もう使わなくなったから</string>
+  <string name="delete_user_reason_manegement">運営側に不満がある</string>
+  <string name="delete_user_reason_use_other_service">他サービスを利用するから</string>
+  <string name="delete_user_reason_other">その他</string>
+  
+  <!-- delete user reason minor item -->
+  <string name="delete_minor_reason_no_interesting_book">目当ての本がなかった</string>
+  <string name="delete_minor_reason_no_good_book">良いと思える商品が少ない</string>
+  <string name="delete_minor_reason_no_like_category">好きなカテゴリの本が少ない</string>
+  <string name="delete_minor_reason_expensive_published_book">出品されている書籍の価格が高い</string>
+  <string name="delete_minor_reason_user_trouble">ユーザー同士でのトラブルがあった</string>
+  <string name="delete_minor_reason_unknown_fear">見知らぬ人とのやり取りが怖い</string>
+  <string name="delete_minor_reason_normal_or_bad">普通・悪い評価をつけられた</string>
+  <string name="delete_minor_reason_publish_method">出品方法について</string>
+  <string name="delete_minor_reason_purchase_method">購入方法について</string>
+  <string name="delete_minor_reason_delivery">配送について</string>
+  <string name="delete_minor_reason_price">価格設定について</string>
+  <string name="delete_minor_reason_package">梱包について</string>
+  <string name="delete_minor_reason_pay">決済の選択肢が少ない</string>
+  <string name="delete_minor_reason_anonymous">匿名配送がないので不安</string>
+  <string name="delete_minor_reason_no_found">探している本が出てこない</string>
+  <string name="delete_minor_reason_bug">不具合が多い</string>
+  <string name="delete_minor_reason_no_item">全て売り切った・売るものがなくなったから</string>
+  <string name="delete_minor_reason_busy">忙しくて使う時間がないから</string>
+  <string name="delete_minor_reason_app_capacity">アプリの容量が少ないから</string>
+  <string name="delete_minor_reason_go_abroad">海外へ行くから</string>
+  <string name="delete_minor_reason_notification">お知らせが多い</string>
+  <string name="delete_minor_reason_management">運営とのやり取りに不満がある</string>
+  <string name="delete_minor_reason_merucari">メルカリ</string>
+  <string name="delete_minor_reason_kauru">カウル</string>
+  <string name="delete_minor_reason_fril">フリル</string>
+  <string name="delete_minor_reason_rakuma">ラクマ</string>
+  <string name="delete_minor_reason_monokyun">モノキュン！</string>
+  <string name="delete_minor_reason_otamart">オタマート</string>
+  <string name="delete_minor_reason_restriction">機能を制限されたから</string>
+  <string name="delete_minor_reason_bored">飽きたから</string>
+
+  <!-- setting email & password -->
+  <string name="setting_email_update_title">登録済みの情報</string>
+  <string name="setting_email_reset_title">パスワードリセット</string>
+  <string name="setting_email_reset_password">パスワードをリセットする</string>
+
+  <!-- email update -->
+  <string name="email_update_new_hint">新しいメールアドレス</string>
+  <string name="email_update_confirm_hint">新しいメールアドレス(確認)</string>
+  <string name="email_update_error_email_notmatch">確認メールアドレスが違います</string>
+  <string name="email_update_success_message">メールアドレスを変更しました！</string>
+
+  <!-- password update -->
+  <string name="password_update_current_hint">現在のパスワード</string>
+  <string name="password_update_new_hint">新しいパスワード</string>
+  <string name="password_update_confirm_hint">新しいパスワード(確認)</string>
+  <string name="password_update_error_current_empty">現在のパスワードを入力してください</string>
+  <string name="password_update_error_new_empty">新しいパスワードを入力してください</string>
+  <string name="password_update_error_notmatch">確認パスワードが違います</string>
+  <string name="password_update_error_incorrect">パスワードが違います</string>
+  <string name="password_update_success_message">パスワードを変更しました！</string>
+
+  <!-- money -->
+  <string name="money_current">現在の売上</string>
+  <string name="money_need_transfer">振込申請期限が3ヶ月以内の売上金</string>
+  <string name="money_expiring">振込申請して現金を受け取る</string>
+  <string name="money_help">ヘルプ</string>
+  <string name="money_schedule">振込のスケジュールは？</string>
+  <string name="money_attention">※売上金を使って本を購入することができます。</string>
+  <string name="money_history">売上・ポイント履歴</string>
+  <string name="money_request_header">振込先口座の設定</string>
+  <string name="money_request_input_bank">銀行</string>
+  <string name="money_request_input_bank_hint">(例)三井住友銀行</string>
+  <string name="money_request_input_account">口座種別</string>
+  <string name="money_request_input_branch">支店コード</string>
+  <string name="money_request_input_branch_hint">(例)432</string>
+  <string name="money_request_input_accountno">口座番号</string>
+  <string name="money_request_input_accountno_hint">(例)2134567</string>
+  <string name="money_request_input_firstname">口座名義 (セイ)</string>
+  <string name="money_request_input_firstname_hint">(例)ヤマモト</string>
+  <string name="money_request_input_lastname">口座名義 (メイ)</string>
+  <string name="money_request_input_lastname_hint">(例)サブロウ</string>
+  <string name="money_request_account_normal">普通</string>
+  <string name="money_request_account_checking">当座</string>
+  <string name="money_request_account_saving">貯蓄</string>
+  <string name="money_request_error_bank_empty">銀行名を入力してください</string>
+  <string name="money_request_error_branch_empty">支店コードを入力してください</string>
+  <string name="money_request_error_branch_invalid">支店コードは3文字の番号を入力してください</string>
+  <string name="money_request_error_accountno_empty">口座番号を入力してください</string>
+  <string name="money_request_error_accountno_invalid">口座番号は7文字の番号を入力してください。口座番号が7桁に満たない場合は、先頭部分に「0」を入力して、全部で7桁となるようにご入力ください</string>
+  <string name="money_request_error_firstname_empty">口座名義(セイ)を入力してください</string>
+  <string name="money_request_error_firstname_invalid">口座名義(セイ)はカタカナで入力してください</string>
+  <string name="money_request_error_lastname_empty">口座名義(メイ)を入力してください</string>
+  <string name="money_request_error_lastname_invalid">口座名義(メイ)はカタカナで入力してください</string>
+  <string name="money_confirm_input_amount">振込申請金額</string>
+  <string name="money_confirm_input_sale">現在の売上</string>
+  <string name="money_confirm_footer">＊%1$,d円以下で%2$,d円の手数料がかかります</string>
+  <string name="money_confirm_error_amount_too_low">申請できる金額は¥%,dからです</string>
+  <string name="money_confirm_error_amount_too_high">一度に申請金額できる金額は¥%,dまでです</string>
+  <string name="money_confirm_error_amount_insufficient">申請金額できる金額は¥%dまでです</string>
+  <string name="money_confirm_error_amount_empty">申請金額を入力してください</string>
+  <string name="money_confirm_error_zero_point">申請できる金額がありません</string>
+  <string name="money_confirm_confirm_message">¥%,d申請しますか?</string>
+  <string name="money_confirm_confirm_ok">申請する</string>
+  <string name="money_confirm_success_message">申請しました！</string>
+
+  <!-- point -->
+  <string name="point_current">所持ポイント</string>
+  <string name="point_expiring">３か月以内に失効するポイント</string>
+  <string name="point_expiring_day">有効期限%1$s</string>
+  <string name="point_invite_friend">友達に招待してポイント増やす</string>
+  <string name="point_unit">%,d pt</string>
+
+  <!-- point transaction -->
+  <string name="point_transaction_balance_sale">売上金残高</string>
+  <string name="point_transaction_balance_bonus">ブクマ！ポイント</string>
+  <string name="point_transaction_balance_point_title">最短の有効期限</string>
+  <string name="point_transaction_balance_point">%1$dpt</string>
+  <string name="point_transaction_header">取引の内容</string>
+  <string name="point_transaction_type_first">初回ブクマ！ポイント獲得</string>
+  <string name="point_transaction_type_signin">招待コード入力</string>
+  <string name="point_transaction_type_buy_merchandise">売上金商品購入%s</string>
+  <string name="point_transaction_type_buy_merchandise_bonus">ブクマ！ポイント商品購入%s</string>
+  <string name="point_transaction_type_buy_merchandise_card">クレジットカード商品購入%s</string>
+  <string name="point_transaction_type_buy_point">クレジットカード購入</string>
+  <string name="point_transaction_type_sold_merchandise">商品売却%s</string>
+  <string name="point_transaction_type_withdraw">銀行振込</string>
+  <string name="point_transaction_type_refund_bonus">ブクマ！ポイント返却</string>
+  <string name="point_transaction_type_refund_normal">売上返却</string>
+  <string name="point_transaction_type_admin_bonus_plus">運営からのブクマ！ポイント付与</string>
+  <string name="point_transaction_type_admin_bonus_minus">運営からのブクマ！ポイント差引</string>
+  <string name="point_transaction_type_admin_normal_plus">運営からの売上付与</string>
+  <string name="point_transaction_type_admin_normal_minus">運営からの売上差引</string>
+  <string name="point_transaction_type_campaign">キャンペーン</string>
+  <string name="point_transaction_type_expired_bonus">ブクマポイント！期限切れ</string>
+  <string name="point_transaction_type_expired_normal">売上金期限切れ</string>
+
+  <!-- notification setting -->
+  <string name="notification_setting_title">通知設定</string>
+  <string name="notification_setting_mail_title">メール通知設定</string>
+  <string name="notification_setting_book_like">出品している本がいいねされた時</string>
+  <string name="notification_setting_book_update">いいねしている本の最安値が更新された時</string>
+  <string name="notification_setting_book_sale">出品している本の最安値が更新された時</string>
+  <string name="notification_setting_transaction">取引が進んだ時</string>
+  <string name="notification_setting_message">メッセージが来た時</string>
+  <string name="notification_setting_news">運営からのお知らせが来た時</string>
+  <string name="notification_setting_email_transaction">取引メールが来た時</string>
+  <string name="notification_setting_email_news">運営からのお知らせメールが来た時</string>
+
+  <!-- block user -->
+  <string name="block_empty_title">ブロックしているユーザーはいません</string>
+  <string name="block_empty_description">ブロックしているユーザーを解除することができます。</string>
+  <string name="block_unblock_confirm_message">ブロック解除しますか?</string>
+  <string name="block_unblock_confirm_ok">解除</string>
+  <string name="block_unblock_success_message">解除しました</string>
+
+  <!-- address -->
+  <string name="address_header">お届け先情報</string>
+  <string name="address_action_add">住所を新しく追加する</string>
+  <string name="address_default_confirm_title">お届け先住所を変更しますか?</string>
+  <string name="address_default_confirm_message">現在取引中のお届け先住所は変更できません</string>
+  <string name="address_default_confirm_ok">変更</string>
+  <string name="address_delete_success_message">削除しました！</string>
+  <string name="address_delete_error_default_message">この配送先は現在選択されています。削除したい場合は新しく配送先を追加するか他の配送先を選択してから再度お試しください</string>
+  <string name="address_delete_error_using_message">この住所は現在取引中の配送先として使用されているため削除できません</string>
+  <string name="address_edit_title_name">お名前</string>
+  <string name="address_edit_title_address">お住まい</string>
+  <string name="address_edit_title_tel">連絡先</string>
+  <string name="address_edit_input_firstname">姓 (全角)</string>
+  <string name="address_edit_input_firstname_hint">(例)山本</string>
+  <string name="address_edit_input_lastname">名 (全角)</string>
+  <string name="address_edit_input_lastname_hint">(例)三郎</string>
+  <string name="address_edit_input_firstname_kana">姓 (カナ)</string>
+  <string name="address_edit_input_firstname_kana_hint">(例)ヤマモト</string>
+  <string name="address_edit_input_lastname_kana">名 (カナ)</string>
+  <string name="address_edit_input_lastname_kana_hint">(例)サブロウ</string>
+  <string name="address_edit_input_postal">郵便番号</string>
+  <string name="address_edit_input_postal_hint">(例)0000000</string>
+  <string name="address_edit_input_prefecture">都道府県</string>
+  <string name="address_edit_input_prefecture_hint">(例)東京都</string>
+  <string name="address_edit_input_city">市町村区</string>
+  <string name="address_edit_input_city_hint">(例)渋谷区</string>
+  <string name="address_edit_input_houseno">番地</string>
+  <string name="address_edit_input_houseno_hint">(例)渋谷99–99</string>
+  <string name="address_edit_input_housename">建物名</string>
+  <string name="address_edit_input_housename_hint">(例)青山ビル 102(任意)</string>
+  <string name="address_edit_input_phone">電話番号</string>
+  <string name="address_edit_input_phone_hint">(例)09012345678(任意)</string>
+  <string name="address_edit_error_firstname_empty">姓を設定してください</string>
+  <string name="address_edit_error_lastname_empty">名を設定してください</string>
+  <string name="address_edit_error_firstname_kana_empty">セイを設定してください</string>
+  <string name="address_edit_error_firstname_kana_invalid">セイは全角カタカナで設定してください</string>
+  <string name="address_edit_error_lastname_kana_empty">メイを設定してください</string>
+  <string name="address_edit_error_lastname_kana_invalid">メイは全角カタカナで設定してください</string>
+  <string name="address_edit_error_postal_empty">郵便番号を設定してください</string>
+  <string name="address_edit_error_postal_invalid">郵便番号は7桁にしてください</string>
+  <string name="address_edit_error_city_empty">市町村区を設定してください</string>
+  <string name="address_edit_error_houseno_empty">番地を設定してください</string>
+  <string name="address_edit_success_message">住所を登録しました！</string>
+
+  <!-- payment -->
+  <string name="payment_creditcard_header">クレジットカード</string>
+  <string name="payment_creditcard_action_add">クレジットカードを追加する</string>
+  <string name="payment_creditcard_date">有効期限 %1$d/%2$d</string>
+  <string name="payment_creditcard_date_expired">カードの有効期限が過ぎているようです。\n別のカードを選択するか新しくカードを登録してください。</string>
+  <string name="payment_creditcard_edit_title">使用可能なクレジットカード</string>
+  <string name="payment_creditcard_edit_input_name_hint">名義人名:例 TARO SUZUKI</string>
+  <string name="payment_creditcard_edit_input_number_hint">カード番号</string>
+  <string name="payment_creditcard_edit_input_ccv_hint">CCV</string>
+  <string name="payment_creditcard_edit_success_message">登録しました</string>
+  <string name="payment_creditcard_error_name_empty">名義人を入力してください</string>
+  <string name="payment_creditcard_error_number_empty">カード番号を入力してください</string>
+  <string name="payment_creditcard_error_ccv_empty">セキュリティコードを入力してください</string>
+  <string name="payment_creditcard_error_card_invalid">こちらのカードはブクマ！ではご利用いただけません。詳しくはお問い合わせください。</string>
+  <string name="payment_creditcard_error_card">クレジットカード登録に失敗しました。入力内容をご確認下さい。</string>
+  <string name="payment_creditcard_default_confirm_title">クレジットカードを変更しますか?</string>
+  <string name="payment_creditcard_default_confirm_message">現在取引中のクレジットカード情報は変更できません</string>
+  <string name="payment_creditcard_default_confirm_ok">変更</string>
+  <string name="payment_creditcard_delete_success_message">削除しました！</string>
+  <string name="payment_creditcard_delete_error_default_message">このクレジットカードは現在選択されています。削除したい場合は新しくクレジットカードを追加するか他のクレジットカードを選択してから再度お試しください</string>
+  <string name="payment_creditcard_dialog_ccv_title">CCV番号の確認方法</string>
+  <string name="payment_creditcard_dialog_ccv_description">CCV項目には、クレジットカード裏面のご署名\n記入欄、最後の3桁の数字を入力ください。</string>
+  <string name="payment_creditcard_need_address_message">カード情報を紐付ける住所が登録されていません。まず先にお届け先住所を登録してください</string>
+  <string name="payment_creditcard_need_address_ok">登録する</string>
+
+  <!-- chat room -->
+  <string name="chatroom_empty_title">まだチャットはありません</string>
+  <string name="chatroom_message_closed">ユーザーが退出しました</string>
+  <string name="chatroom_message_image">✓画像を送信しました</string>
+  <string name="chatroom_message_prepare">✓商品を購入しました</string>
+  <string name="chatroom_message_shipped">✓発送完了しました</string>
+  <string name="chatroom_message_arrived">✓購入者が出品者を評価しました</string>
+  <string name="chatroom_message_finished">✓取引が終了しました</string>
+  <string name="chatroom_delete_confirm_message">やりとりを削除すると相手からも削除されます。よろしいでしょうか？</string>
+  <string name="chatroom_delete_confirm_ok">削除</string>
+  <string name="chat_send">送信</string>
+  <string name="chat_send_error_option_delete">削除する</string>
+  <string name="chat_send_error_option_resend">再送する</string>
+  <string name="chat_message_merchandise_title"><![CDATA[<b>%s</b>について]]></string>
+  <string name="chat_message_transaction_desc"><![CDATA[<b>%s</b>に関する全ての取引が終了しました]]></string>
+  <string name="chat_message_transaction_shipped">商品を発送しました</string>
+  <string name="chat_message_transaction_arrived_seller">相手があなたを評価しました\n購入者を評価してください</string>
+  <string name="chat_message_transaction_arrived_buyer">相手を評価しました\n相手からの評価をお待ちください</string>
+  <string name="chat_message_transaction_buy">購入しました</string>
+
+  <!-- merchandise chooser -->
+  <string name="merchandise_chooser_tab_opponent">相手のアイテム</string>
+  <string name="merchandise_chooser_tab_mine">自分のアイテム</string>
+
+  <!-- book detail -->
+  <string name="book_timeline_sold_out">売り切れです</string>
+  <string name="book_timeline_no_seller_yet">出品がありません</string>
+  <string name="book_detail_published">出版日: %s</string>
+  <string name="book_detail_store_price">新品定価: ¥%,d</string>
+  <string name="book_detail_status">商品の状態: %s</string>
+  <string name="book_detail_lowest_title">最安の出品価格</string>
+  <string name="book_detail_lowest_buy">最安値で購入する</string>
+  <string name="book_detail_sold_out">売り切れです</string>
+  <string name="book_detail_no_seller_yet">出品がありません</string>
+  <string name="book_detail_not_available_description">いいねしておくと、新たに出品があった際に\n通知を受け取ることができます</string>
+  <string name="book_detail_title_action">その他</string>
+  <string name="book_detail_title_merchandise">この本の出品者一覧 ( %,d )</string>
+  <string name="book_detail_title_tags">タグ一覧</string>
+  <string name="book_detail_title_summary">本のあらすじ</string>
+  <string name="book_detail_action_more_look">もっと見る</string>
+  <string name="book_detail_action_sell">この本を出品する</string>
+  <string name="book_detail_action_add_tag">＋タグを追加</string>
+  <string name="book_detail_action_report">不適切な出品・タグを報告する</string>
+  <string name="book_detail_action_rakuten">楽天ブックスでこの本を見る</string>
+  <string name="book_merchandise_ship_detail"><![CDATA[<b>%1$s</b>から<b>%2$d ~ %3$d日</b>以内に<b>%4$s</b>で発送します]]></string>
+
+  <string name="book_status_no">なし</string>
+  <string name="book_status_new">とても良い</string>
+  <string name="book_status_good">良い</string>
+  <string name="book_status_fair">可</string>
+  <string name="book_status_defect">難あり</string>
+
+  <string name="book_report_confirm_message">この商品を通報しますか？</string>
+  <string name="book_report_success_title">通報しました！</string>
+  <string name="book_report_success_message">複雑な問題を解決するためには詳細な情報も必要です。通報の詳細も通報しますか?</string>
+  <string name="book_report_success_report">詳細に通報する</string>
+
+  <string name="merchandise_button_buy">購入する</string>
+  <string name="merchandise_button_edit">編集する</string>
+  <string name="merchandise_button_sold_out">売り切れ</string>
+  <string name="merchandise_error_user_deleted">この商品の出品者はすでに退会しました。いいねをしておくと、新たな出品者が出た際に通知を受けとることができます</string>
+  <string name="merchandise_error_sold">この商品はすでに購入されました。いいねをしておくと、新たな出品者が出た際に通知を受けとることができます</string>
+  <string name="merchandise_error_self">自分が出品した商品は買うことができません</string>
+
+  <string name="merchandise_ship_provider_1">ゆうパック</string>
+  <string name="merchandise_ship_provider_2">ゆうメール</string>
+  <string name="merchandise_ship_provider_3">定形・定形外郵便</string>
+  <string name="merchandise_ship_provider_4">クリックポスト</string>
+  <string name="merchandise_ship_provider_5">レターパック</string>
+  <string name="merchandise_ship_provider_6">スマートレター</string>
+  <string name="merchandise_ship_provider_7">ポスパケット</string>
+  <string name="merchandise_ship_provider_8">その他／未定</string>
+
+  <!-- Like books -->
+  <string name="book_liked_empty_title">いいねした本がまだありません</string>
+  <string name="book_liked_empty_description">いいねしておくと、より安い値段の本が出品された時にお知らせが受け取れます</string>
+
+  <!-- Selling books -->
+  <string name="book_selling_empty_title">出品中の商品はまだありません</string>
+  <string name="book_selling_empty_description">表示するコンテンツがありません</string>
+  <string name="book_selling_sold_out">売り切れ</string>
+  <string name="book_selling_title"><![CDATA[<b>%s</b>を出品中です]]></string>
+
+  <!-- Bought books -->
+  <string name="book_bought_empty_title">まだ本を購入していません</string>
+  <string name="book_bought_empty_description">ブクマで買った本の一覧がここで見られますあなたが素敵な１冊に出会えますように</string>
+
+  <!-- Purchase -->
+  <string name="purchase_merchandise_header">商品の情報</string>
+  <string name="purchase_merchandise_seller"><![CDATA[<b>%1$s</b>さんが<b>%2$s</b>から<b>%3$d日 ~ %4$d日</b>以内に<b>%5$s</b>で発送します]]></string>
+  <string name="purchase_info_header">お支払い情報</string>
+  <string name="purchase_info_price">商品の代金</string>
+  <string name="purchase_info_payment">お支払い方法</string>
+  <string name="purchase_info_bonus_point">ポイントを使用</string>
+  <string name="purchase_info_sale_point">売上金で支払う</string>
+  <string name="purchase_info_amount">お支払い金額</string>
+  <string name="purchase_info_footer">＊クレジットカードでのお支払いは決済機関の都合により、99円以下では行えませんのでご注意ください</string>
+  <string name="purchase_shipping_header">お届け先情報</string>
+  <string name="purchase_proceed">購入する</string>
+  <string name="purchase_error_need_address_message">住所登録が登録されていません。購入するためには、住所登録、クレジットカード登録が必要です</string>
+  <string name="purchase_error_need_address_ok">住所登録画面へ進む</string>
+  <string name="purchase_error_need_address_cancel">今はやめとく</string>
+  <string name="purchase_error_insufficient_point_message">ポイントが足りません。クレジットカードで購入するか、友達を招待してポイントをゲットしてください</string>
+  <string name="purchase_error_insufficient_point_invite">友達を招待する</string>
+  <string name="purchase_error_insufficient_point_add_card">クレジットカードを登録する</string>
+  <string name="purchase_error_sold_message">この商品はすでに購入されています</string>
+  <string name="purchase_error_self">自分が出品した商品は買うことができません</string>
+  <string name="purchase_confirm_message">本当に購入しますか?</string>
+  <string name="purchase_confirm_bonus_normal_message">ブクマポイントを%1$,dpt、売上を¥%2$d使って購入しますか?</string>
+  <string name="purchase_confirm_bonus_normal_credit_message">ブクマポイントを%1$,d、売上を¥%2$dを使って、残り¥%3$dをクレジットカードで支払いますか?</string>
+  <string name="purchase_confirm_bonus_message">ブクマポイントを%,dpt使って購入しますか?</string>
+  <string name="purchase_confirm_bonus_credit_message">ブクマポイントを%1$,d使って、残り¥%2$dをクレジットカードで支払いますか?</string>
+  <string name="purchase_confirm_normal_message">売上を¥%,d使って購入しますか?</string>
+  <string name="purchase_confirm_normal_credit_message">売上を¥%1$d使って、残り¥%2$dをクレジットカードで支払いますか?</string>
+  <string name="purchase_confirm_ok">購入する</string>
+  <string name="purchase_success_dialog_title">購入が完了しました</string>
+  <string name="purchase_success_dialog_message">出品者の発送をお待ちください</string>
+  <string name="purchase_success_dialog_button">取引画面へ進む</string>
+
+  <!-- transactions -->
+  <string name="transaction_cancel_title">取引のキャンセルが可能です</string>
+  <string name="transaction_cancel_message">お支払いを完了してから10日が以上経ちました。\nもし取引に進展がない場合は取引をキャンセル\nすることができます。商品の代金は全額返金されます</string>
+  <string name="transaction_cancel_button">キャンセル</string>
+  <string name="transaction_cancel_confirm_dialog_title">本当にキャンセルしますか？</string>
+  <string name="transaction_cancel_confirm_dialog_ok_button">キャンセルする</string>
+  <string name="transaction_cancel_confirm_dialog_cancel_button">キャンセルしない</string>
+  <string name="transaction_cancel_confirm_dialog_contact_button">運営に問い合わせる</string>
+  <string name="transaction_cancel_success_message">キャンセルしました</string>
+  <string name="transaction_progress_title">取引の進捗</string>
+  <string name="transaction_progress_buyer_prepare_title">出品者が発送準備中です</string>
+  <string name="transaction_progress_buyer_prepare_description">出品者からの発送通知をお待ち下さい</string>
+  <string name="transaction_progress_buyer_shipped_title">出品者が発送しました</string>
+  <string name="transaction_progress_buyer_shipped_description">商品の到着をお待ち下さい。</string>
+  <string name="transaction_progress_buyer_arrived_title">出品者を評価済みです。</string>
+  <string name="transaction_progress_buyer_arrived_description">出品者があなたのレビューを書き終わるまでお待ち下さい</string>
+  <string name="transaction_progress_buyer_finished_title">出品者を評価済みです</string>
+  <string name="transaction_progress_buyer_finished_description">これで取引は完了です</string>
+  <string name="transaction_progress_staff_title">この取引はキャンセルされました</string>
+  <string name="transaction_progress_staff_description">詳しくはお問い合わせフォームよりお願いします</string>
+  <string name="transaction_progress_cancelled_title">キャンセルしました</string>
+  <string name="transaction_progress_cancelled_description">キャンセルしました</string>
+  <string name="transaction_progress_seller_initial_title">まだ取引が始まっていません</string>
+  <string name="transaction_progress_seller_initial_description">購入通知をお待ち下さい</string>
+  <string name="transaction_progress_seller_prepare_title">発送準備を行って下さい</string>
+  <string name="transaction_progress_seller_prepare_description">発送完了したら購入者に伝えましょう</string>
+  <string name="transaction_progress_seller_shipped_title">発送完了しました</string>
+  <string name="transaction_progress_seller_shipped_description">購入者が受け取るまでお待ち下さい</string>
+  <string name="transaction_progress_seller_arrived_title">購入者が受け取りました</string>
+  <string name="transaction_progress_seller_arrived_description">購入者のレビューを書いて評価しましょう</string>
+  <string name="transaction_progress_seller_finished_title">取引は終了しました</string>
+  <string name="transaction_progress_seller_finished_description">お疲れさまでした</string>
+  <string name="transaction_step_one">発送準備中</string>
+  <string name="transaction_step_two">発送済み</string>
+  <string name="transaction_step_three">配達中</string>
+  <string name="transaction_step_four">配達済み</string>
+  <string name="transaction_buyer_chat">この出品者とのやりとり</string>
+  <string name="transaction_seller_chat">この購入者とのやりとり</string>
+  <string name="transaction_content_title">取引内容</string>
+  <string name="transaction_content_price">商品の代金</string>
+  <string name="transaction_buying_price">販売価格</string>
+  <string name="transaction_sales_commission">販売手数料</string>
+  <string name="transaction_sales_profit">販売利益</string>
+  <string name="transaction_content_bought_date">購入した日時</string>
+  <string name="transaction_content_ship_date">発送予定日</string>
+  <string name="transaction_content_contact_id">お問い合わせID</string>
+  <string name="transaction_address_title">お届け先情報</string>
+  <string name="transaction_help_title">ヘルプ</string>
+  <string name="transaction_help_packaging_method">梱包の方法は？</string>
+  <string name="transaction_help_trouble_with_trading">取引で困った時</string>
+  <string name="transaction_review_title">取引の評価</string>
+  <string name="transaction_review_good">スムーズに取引できました</string>
+  <string name="transaction_review_fair">少し不安な取引でした</string>
+  <string name="transaction_review_bad">取引中トラブルがありました</string>
+  <string name="transaction_review_good_placeholder">【とても良い取引でした】ありがとうございました。とても良い取引ができました。またご縁がありましたら宜しくお願いします。</string>
+  <string name="transaction_review_fair_placeholder">【無事に取引を終えました】ありがとうございました。</string>
+  <string name="transaction_review_bad_placeholder">【少し不安な取引でした】少し不安な取引でした。トラブルや問題がありました。</string>
+  <string name="transaction_review_button">送信する</string>
+  <string name="transaction_review_seller_button">レビューを書いて取引を完了する</string>
+  <string name="transaction_review_buyer_button">レビューを書いて受取連絡する</string>
+  <string name="transaction_review_error_comment_empty">コメントを入力して下さい</string>
+  <string name="transaction_sent_button">発送完了を購入者に伝える</string>
+  <string name="transaction_sent_confirm_message">発送完了したことを購入者に通知しますか？</string>
+  <string name="transaction_sent_confirm_ok">通知する</string>
+  <string name="transaction_id_dialog_title">お問い合わせIDで運営に問題を報告しますか</string>
+  <string name="transaction_id_dialog_report_button">報告</string>
+  <string name="transaction_id_dialog_copy_button">コピー</string>
+  <string name="transaction_id_copied">コピーしました</string>
+  <string name="transaction_notice_report">何かお困りのことがありましたか？\nお気軽にご相談、お問い合わせください</string>
+  <string name="transaction_report_button">事務局へ問い合わせる</string>
+  <string name="transaction_ship_in">発送までの目安 %s</string>
+  
+  <!-- publish -->
+  <string name="publish_author"><![CDATA[<b>出版社:</b> %s]]></string>
+  <string name="publish_publisher"><![CDATA[<b>著者:</b> %s]]></string>
+  <string name="publish_store_price"><![CDATA[<b>新品定価:</b> ¥%,d]]></string>
+  <string name="publish_one_book_button">１冊だけ出品</string>
+  <string name="publish_bulk_book_button">まとめて出品</string>
+  <string name="publish_bulk_book_title">掲載用タイトル</string>
+  <string name="publish_bulk_book_title_hint">(例)ONE PIECE 1〜30巻</string>
+  <string name="publish_book_price">販売価格(送料込み)</string>
+  <string name="publish_book_price_hint">¥300</string>
+  <string name="publish_book_sales_commission">販売手数料</string>
+  <string name="publish_book_sales_commission_default_value">-</string>
+  <string name="publish_book_sales_profit">販売利益</string>
+  <string name="publish_book_status">商品の状態</string>
+  <string name="publish_bulk_book_photo">商品の写真</string>
+  <string name="publish_bulk_book_photo_info">3枚まで。任意。</string>
+  <string name="publish_book_comment_great_hint">(例) 購入後カバーを付けて一度読んだのみです。</string>
+  <string name="publish_book_comment_good_hint">(例) 数回読んだだけですので、状態は良いと思います</string>
+  <string name="publish_book_comment_normal_hint">(例) ところどころ気になる汚れがあり、保管によるヤケや痛みがありますが、中身はキレイです。</string>
+  <string name="publish_book_comment_bad_hint">(例) シミ、日焼け、破れなどありますが、問題なく読めます。</string>
+  <string name="publish_book_shipping_from">発送元の地域</string>
+  <string name="publish_book_shipping_way">発送方法</string>
+  <string name="publish_book_shipping_day">発送までの日程</string>
+  <string name="publish_help_title">ヘルプ</string>
+  <string name="publish_help_price">出品にお金はかかるの?</string>
+  <string name="publish_help_flow">取引の流れを確認する</string>
+  <string name="publish_help_delivery">一番安く発送するには？</string>
+  <string name="publish_error_price_empty">価格を入力してください</string>
+  <string name="publish_error_price_below_hundred">価格は100円以上である必要があります</string>
+  <string name="publish_error_price_too_much">価格は999,999円以下である必要があります</string>
+  <string name="publish_error_bulk_title_empty">掲載用タイトルを入力してください</string>
+  <string name="publish_ship_in_1">1 ~ 3日</string>
+  <string name="publish_ship_in_2">4 ~ 6日</string>
+  <string name="publish_ship_in_3">7 ~ 9日</string>
+  <string name="publish_ship_in_4">10日 ~ 14日</string>
+  <string name="publish_success_dialog_title">出品が完了しました</string>
+  <string name="publish_success_dialog_description">出品した商品は「マイページ」から\nいつでも見ることができます。また出品が反映されるまで数分かかる場合がございます</string>
+  <string name="publish_success_dialog_continue_button">続けて出品する</string>
+  <string name="publish_success_dialog_share_button">商品をシェアする</string>
+  <string name="publish_success_dialog_back_button">ホームに戻る</string>
+  <string name="publish_success_share_text">ブクマ!の招待コード[%1$s]\n入力で、今なら%2$dptプレゼント!!\nブクマ！なら%3$sでこの本が買えるよ！\n#ブクマ！</string>
+  <string name="publish_action_delete_button">削除する</string>
+  <string name="publish_delete_confirm_message">本当に削除しますか？</string>
+  <string name="publish_delete_confirm_ok">削除する</string>
+  <string name="publish_delete_success_message">削除しました！</string>
+
+  <!-- tag -->
+  <string name="dialog_tag_introduction_title">タグ機能が追加されました！</string>
+  <string name="dialog_tag_introduction_description">本にタグをつけられるようになりました！\n本の詳細ページからタグをタップすると、同じタグが付いている本の一覧を見ることもできます。\nぜひご利用ください！</string>
+  <string name="dialog_tag_introduction_tag_example">#夏に読みたい小説　#芥川賞\n#マンガ大賞　#読書術\n#ダイエット\n#就活生におすすめ</string>
+
+  <!-- chip -->
+  <!-- Text displayed when the recipientedittextview is not focused. Displays the total number of recipients since the field is shrunk to just display a portion -->
+  <string name="more_string">\u002B<xliff:g id="count">%1$d</xliff:g></string>
+  <!-- Text displayed when the user long presses on a chip to copy the recipients email address [CHAR LIMIT=200] -->
+  <string name="copy_email">Copy email address</string>
+  <!-- Text displayed when the user long presses on a chip to copy the recipient's phone number [CHAR LIMIT=200] -->
+  <string name="copy_number">Copy phone number</string>
+  <!-- Text displayed in the enter key slot when the recipientedittextview has focus [CHAR LIMIT=12] -->
+  <string name="action_label">Return</string>
+  <!-- Announce the number of possible recipient entries that the user can select from for accessibility purposes [CHAR LIMIT=200] -->
+  <string name="accessbility_suggestion_dropdown_opened">Contact suggestions opened</string>
+  <!-- Announce that there are no possible recipient entries that the user can select from for accessibility purposes [CHAR LIMIT=200] -->
+  <string name="accessbility_suggestion_dropdown_closed">No suggestions available</string>
+  <!-- Description for the delete button that removes the selected contact from the recipients [CHAR LIMIT=100] -->
+  <string name="dropdown_delete_button_desc">Remove <xliff:g id="contact">%s</xliff:g> from recipients</string>
+  <!-- Text displayed as the primary action for a dialog to copy text. [CHAR LIMIT=25] -->
+  <string name="chips_action_copy">Copy</string>
+  <!-- Text displayed as the secondary action for a dialog to cancel. [CHAR LIMIT=25] -->
+  <string name="chips_action_cancel">Cancel</string>
+  <!-- Text displayed on the drop down item that is shown when app doesn't have Contact permission. This item will open dialog to request permission. [CHAR LIMIT=50] -->
+  <string name="chips_permission_text">Allow contacts suggestions</string>
+
+</resources>

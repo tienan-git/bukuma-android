@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:clipToPadding="false"
+		android:focusableInTouchMode="true"
+		android:orientation="vertical"
+		android:padding="16dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/delete_user_title"
+			android:textColor="@color/black87"
+			android:textSize="16sp"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:gravity="center"
+			android:text="@string/delete_user_description"
+			android:textColor="@color/black54"
+			android:textSize="14sp"/>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:src="@drawable/ic_img_bukuma_out"/>
+
+		<RadioGroup
+			android:id="@+id/reason_radio_group"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp">
+
+			<RadioButton
+				android:id="@+id/reason1_radio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/delete_user_reason_no_book"
+				android:textColor="@color/black54"/>
+
+			<RadioGroup
+				android:id="@+id/reason1_radio_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="32dp">
+
+				<RadioButton
+					android:id="@+id/minor1_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_no_interesting_book"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor2_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_no_good_book"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor3_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_no_like_category"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor4_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_expensive_published_book"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor5_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_user_reason_other"
+					android:textColor="@color/black54"/>
+
+			</RadioGroup>
+
+			<RadioButton
+				android:id="@+id/reason2_radio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/delete_user_reason_cant_sell"
+				android:textColor="@color/black54"/>
+
+			<RadioButton
+				android:id="@+id/reason3_radio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/delete_user_reason_user_trouble"
+				android:textColor="@color/black54"/>
+
+			<RadioGroup
+				android:id="@+id/reason3_radio_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="32dp">
+
+				<RadioButton
+					android:id="@+id/minor6_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_user_trouble"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor7_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_unknown_fear"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor8_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_normal_or_bad"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor9_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_user_reason_other"
+					android:textColor="@color/black54"/>
+
+			</RadioGroup>
+
+
+			<RadioButton
+				android:id="@+id/reason4_radio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/delete_user_reason_not_to_understand"
+				android:textColor="@color/black54"/>
+
+			<RadioGroup
+				android:id="@+id/reason4_radio_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="32dp">
+
+				<RadioButton
+					android:id="@+id/minor10_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_publish_method"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor11_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_purchase_method"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor12_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_delivery"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor13_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_price"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor14_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_package"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor15_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_user_reason_other"
+					android:textColor="@color/black54"/>
+
+			</RadioGroup>
+
+			<RadioButton
+				android:id="@+id/reason5_radio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/delete_user_reason_hard_to_use"
+				android:textColor="@color/black54"/>
+
+			<RadioGroup
+				android:id="@+id/reason5_radio_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="32dp">
+
+				<RadioButton
+					android:id="@+id/minor16_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_pay"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor17_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_anonymous"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor18_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_no_found"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor19_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_bug"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor20_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_user_reason_other"
+					android:textColor="@color/black54"/>
+
+			</RadioGroup>
+
+
+			<RadioButton
+				android:id="@+id/reason6_radio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/delete_user_reason_no_use"
+				android:textColor="@color/black54"/>
+
+			<RadioGroup
+				android:id="@+id/reason6_radio_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="32dp">
+
+				<RadioButton
+					android:id="@+id/minor21_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_no_item"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor22_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_busy"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor23_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_app_capacity"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor24_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_go_abroad"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor25_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_user_reason_other"
+					android:textColor="@color/black54"/>
+
+			</RadioGroup>
+
+			<RadioButton
+				android:id="@+id/reason7_radio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/delete_user_reason_manegement"
+				android:textColor="@color/black54"/>
+
+			<RadioGroup
+				android:id="@+id/reason7_radio_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="32dp">
+
+				<RadioButton
+					android:id="@+id/minor26_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_notification"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor27_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_management"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor28_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_user_reason_other"
+					android:textColor="@color/black54"/>
+
+			</RadioGroup>
+
+			<RadioButton
+				android:id="@+id/reason8_radio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/delete_user_reason_use_other_service"
+				android:textColor="@color/black54"/>
+
+			<RadioGroup
+				android:id="@+id/reason8_radio_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="32dp">
+
+				<RadioButton
+					android:id="@+id/minor29_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_merucari"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor30_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_kauru"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor31_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_fril"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor32_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_rakuma"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor33_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_monokyun"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor34_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_otamart"
+					android:textColor="@color/black54"/>
+
+
+				<RadioButton
+					android:id="@+id/minor35_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_user_reason_other"
+					android:textColor="@color/black54"/>
+
+			</RadioGroup>
+
+			<RadioButton
+				android:id="@+id/reason9_radio"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/delete_user_reason_other"
+				android:textColor="@color/black54"/>
+
+			<RadioGroup
+				android:id="@+id/reason9_radio_group"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="32dp">
+
+				<RadioButton
+					android:id="@+id/minor36_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_restriction"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor37_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_minor_reason_bored"
+					android:textColor="@color/black54"/>
+
+				<RadioButton
+					android:id="@+id/minor38_radio"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/delete_user_reason_other"
+					android:textColor="@color/black54"/>
+
+			</RadioGroup>
+
+
+		</RadioGroup>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:background="@drawable/background_button_grey_border"
+			android:orientation="vertical"
+			android:padding="8dp">
+
+			<EditText
+				android:id="@+id/comment_edittext"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@null"
+				android:gravity="top"
+				android:hint="@string/delete_user_comment_hint"
+				android:maxLength="250"
+				android:minLines="3"
+				android:textSize="14sp"/>
+
+			<TextView
+				android:id="@+id/count_textview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:text="0 / 250"/>
+
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/delete_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:background="@drawable/background_button_delete"
+			android:text="@string/delete_user_button"
+			android:textColor="@android:color/white"/>
+
+	</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:id="@+id/publish_mode_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:clipToPadding="false"
+      android:padding="16dp">
+
+      <Button
+        android:id="@+id/one_book_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/background_button_book_publish"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/icon_book_one"
+        android:padding="8dp"
+        android:text="@string/publish_one_book_button"
+        android:textColor="@color/color_book_button_publish"
+        android:textSize="12sp"
+        tools:ignore="ButtonStyle"/>
+
+      <Button
+        android:id="@+id/bulk_book_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_button_book_publish"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/icon_book_bulk"
+        android:padding="8dp"
+        android:text="@string/publish_bulk_book_button"
+        android:textColor="@color/color_book_button_publish"
+        android:textSize="12sp"
+        tools:ignore="ButtonStyle"/>
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="4dp"
+      android:background="@color/list_separator"/>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:padding="16dp">
+
+      <ImageView
+        android:id="@+id/book_imageview"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:background="@color/list_separator"/>
+
+      <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/book_imageview"
+        android:text="title"
+        android:textColor="@color/black87"
+        android:textSize="14sp"/>
+
+      <TextView
+        android:id="@+id/author_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_textview"
+        android:layout_below="@+id/title_textview"
+        android:text="@string/publish_author"
+        android:textColor="@color/black54"
+        android:textSize="12sp"/>
+
+      <TextView
+        android:id="@+id/publisher_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_textview"
+        android:layout_below="@+id/author_textview"
+        android:text="@string/publish_publisher"
+        android:textColor="@color/black54"
+        android:textSize="12sp"/>
+
+      <TextView
+        android:id="@+id/store_price_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_textview"
+        android:layout_below="@+id/publisher_textview"
+        android:text="@string/publish_store_price"
+        android:textColor="@color/black54"
+        android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+      android:id="@+id/bulk_title_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <jp.com.labit.bukuma.ui.custom.FormView
+        android:id="@+id/bulk_title_formview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hint="@string/publish_bulk_book_title_hint"
+        app:title="@string/publish_bulk_book_title"/>
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/price_formview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:hint="@string/publish_book_price_hint"
+      app:input="decimal"
+      app:limit="8"
+      app:title="@string/publish_book_price"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <LinearLayout
+      android:id="@+id/sales_commission_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/publish_book_sales_commission"
+            android:textColor="@color/black87"
+            android:textSize="12sp"/>
+
+          <TextView
+            android:id="@+id/sales_commission_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/publish_book_sales_commission_default_value"
+            android:textColor="@color/black87"
+            android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="16dp">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/publish_book_sales_profit"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+
+          <TextView
+            android:id="@+id/sales_profit_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥0"
+            android:textColor="@color/black87"
+            android:textSize="14sp"/>
+        </LinearLayout>
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/list_separator"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/status_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:gravity="center_vertical"
+      android:padding="16dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/publish_book_status"
+        android:textColor="@color/black87"
+        android:textSize="14sp"/>
+
+      <ImageButton
+        android:id="@+id/status_bad_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/button_book_bad"/>
+
+      <ImageButton
+        android:id="@+id/status_normal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:background="@null"
+        android:src="@drawable/button_book_normal"/>
+
+      <ImageButton
+        android:id="@+id/status_good_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:background="@null"
+        android:src="@drawable/button_book_good"/>
+
+      <ImageButton
+        android:id="@+id/status_great_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:background="@null"
+        android:src="@drawable/button_book_great"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/image_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <TextView
+          android:id="@+id/image_title_textview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_toLeftOf="@+id/image_one_button"
+          android:text="@string/publish_bulk_book_photo"
+          android:textColor="@color/black87"
+          android:textSize="14sp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/image_title_textview"
+          android:layout_marginTop="4dp"
+          android:layout_toLeftOf="@+id/image_one_button"
+          android:text="@string/publish_bulk_book_photo_info"
+          android:textColor="@color/black54"
+          android:textSize="10sp"/>
+
+        <ImageButton
+          android:id="@+id/image_three_button"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_alignParentRight="true"
+          android:background="@null"
+          android:src="@drawable/ic_bulk_camera"/>
+
+        <ImageButton
+          android:id="@+id/image_two_button"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginRight="8dp"
+          android:layout_toLeftOf="@+id/image_three_button"
+          android:background="@null"
+          android:src="@drawable/ic_bulk_camera"/>
+
+        <ImageButton
+          android:id="@+id/image_one_button"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginRight="8dp"
+          android:layout_toLeftOf="@+id/image_two_button"
+          android:background="@null"
+          android:src="@drawable/ic_bulk_camera"/>
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <LinearLayout
+      android:id="@+id/comment_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+      <EditText
+        android:id="@+id/comment_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/publish_book_comment_great_hint"
+        android:maxLength="200"
+        android:textSize="12sp"/>
+
+      <TextView
+        android:id="@+id/comment_count_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:text="0 / 200"
+        android:textColor="@color/black26"
+        android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="4dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/ship_from_formview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:entries="@array/prefectures"
+      app:title="@string/publish_book_shipping_from"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/ship_way_formview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:entries="@array/merchandise_shipway_array"
+      app:title="@string/publish_book_shipping_way"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/list_separator"/>
+
+    <jp.com.labit.bukuma.ui.custom.FormView
+      android:id="@+id/ship_in_formview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:entries="@array/publish_shipin_array"
+      app:title="@string/publish_book_shipping_day"/>
+
+    <Button
+      android:id="@+id/delete_button"
+      android:layout_width="match_parent"
+      android:layout_height="34dp"
+      android:layout_margin="16dp"
+      android:background="@drawable/background_button_red"
+      android:text="@string/publish_action_delete_button"
+      android:textColor="@android:color/white"
+      android:textSize="12sp"/>
+
+    <LinearLayout
+      android:id="@+id/help_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_separator"
+        android:padding="16dp"
+        android:text="@string/publish_help_title"
+        android:textSize="12sp"/>
+
+      <LinearLayout
+        android:id="@+id/help_price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_white"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/publish_help_price"
+          android:textColor="@color/black87"
+          android:textSize="14sp"/>
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="-8dp"
+          android:src="@drawable/ic_to"/>
+
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <LinearLayout
+        android:id="@+id/help_flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_white"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/publish_help_flow"
+          android:textColor="@color/black87"
+          android:textSize="14sp"/>
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="-8dp"
+          android:src="@drawable/ic_to"/>
+
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_separator"/>
+
+      <LinearLayout
+        android:id="@+id/help_delivery_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_white"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/publish_help_delivery"
+          android:textColor="@color/black87"
+          android:textSize="14sp"/>
+
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="-8dp"
+          android:src="@drawable/ic_to"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>

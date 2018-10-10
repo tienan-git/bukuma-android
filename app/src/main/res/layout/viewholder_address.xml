@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/background_button_white"
+  android:padding="16dp">
+
+  <TextView
+    android:id="@+id/address_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/check_imageview"
+    android:text="address"
+    android:textColor="@color/black87"
+    android:textSize="14sp"/>
+
+  <ImageView
+    android:id="@+id/check_imageview"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="16dp"
+    android:src="@drawable/ic_to_check"/>
+
+</RelativeLayout>
