@@ -97,6 +97,13 @@
             tools:ignore="Deprecated"/>
 
           <ImageButton
+              android:id="@+id/barcode_button"
+              android:layout_width="48dp"
+              android:layout_height="match_parent"
+              android:background="@null"
+              android:src="@drawable/ic_input_camera"/>
+
+          <ImageButton
             android:id="@+id/search_close_button"
             android:layout_width="48dp"
             android:layout_height="match_parent"

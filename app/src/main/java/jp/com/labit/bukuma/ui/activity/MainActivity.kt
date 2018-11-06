@@ -17,6 +17,7 @@ import com.jakewharton.rxbinding.view.RxView
 import com.jakewharton.rxbinding.widget.RxTextView
 import io.realm.Realm
 import jp.com.labit.bukuma.R
+import jp.com.labit.bukuma.extension.filterLoggedIn
 import jp.com.labit.bukuma.extension.realm
 import jp.com.labit.bukuma.model.realm.SearchHistory
 import jp.com.labit.bukuma.ui.activity.drawer.*
@@ -30,6 +31,7 @@ import jp.com.labit.bukuma.util.hideKeyboard
 import jp.com.labit.bukuma.util.showKeyboard
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.drawer_navigation.*
+import kotlinx.android.synthetic.main.fragment_home.*
 import rx.Observable
 import rx.Subscription
 import rx.android.schedulers.AndroidSchedulers
@@ -281,6 +283,13 @@ class MainActivity : BaseActivity() {
           }
         }
 
+    // start camera with bacode_button pressed
+    RxView.clicks(barcode_button)
+            .throttleFirst(1, TimeUnit.SECONDS)
+            .subscribe {
+              // show camera
+              startActivity(Intent(this, ScannerActivity::class.java))
+            }
     //search_card.visibility = View.INVISIBLE
     search_recyclerview.visibility = View.GONE
   }
