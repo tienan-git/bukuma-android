@@ -66,8 +66,8 @@ class BookViewHolder(val parent: ViewGroup) : BaseObjectViewHolder<Book>(parent,
     val margin = context.resources.getDimensionPixelSize(R.dimen.book_padding) * 2
     val columnSize = (parent.width - ((column + 1) * margin)) / column
     val width = columnSize
-    val ratio = width.toFloat() / obj.width()
-    val height = (obj.height() * ratio).toInt()
+    val ratio = width.toFloat() / 128/*obj.width()*/
+    val height = (182/*obj.height()*/ * ratio).toInt()
 
     val lp = imageView.layoutParams
     lp.height = height

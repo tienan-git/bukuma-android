@@ -36,6 +36,7 @@
         android:layout_below="@+id/imageview"
         android:layout_margin="12dp"
         android:ellipsize="end"
+        android:minLines="2"
         android:maxLines="2"
         android:text="title"
         android:textColor="@color/black54"
@@ -62,6 +63,7 @@
         android:layout_toRightOf="@+id/price_textview"
         android:layout_alignBaseline="@+id/price_textview"
         android:layout_marginLeft="6dp"
+        android:singleLine="true"
         android:textColor="@color/discount_rate"
         android:textSize="10sp"
         android:textStyle="bold"/>

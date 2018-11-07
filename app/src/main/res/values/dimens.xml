@@ -4,7 +4,7 @@
   <dimen name="balloon_radius">5dp</dimen>
 
   <!-- book list -->
-  <integer name="book_column">2</integer>
+  <integer name="book_column">3</integer>
   <dimen name="book_padding">8dp</dimen>
   <dimen name="book_profile_height">130dp</dimen>
   <dimen name="book_item_width">50dp</dimen>
