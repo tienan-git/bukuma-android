@@ -15,6 +15,7 @@ import com.google.android.gms.vision.barcode.Barcode
 import com.google.android.gms.vision.barcode.BarcodeDetector
 import com.jakewharton.rxbinding.view.RxView
 import jp.com.labit.bukuma.R
+import jp.com.labit.bukuma.extension.toJson
 import jp.com.labit.bukuma.model.Book
 import jp.com.labit.bukuma.ui.dialog.BookDialog
 import jp.com.labit.bukuma.ui.dialog.InfoDialog
@@ -33,6 +34,9 @@ import java.util.concurrent.TimeUnit
  */
 class ScannerActivity : BaseActivity(), BookDialog.BookDialogCallback, InfoDialog.InfoDialogCallback {
 
+  companion object {
+    val EXTRA_IS_FROM_SEARCH = "extra_is_from_search"
+  }
   private val DIALOG_SEARCHING_TAG = "searching"
   private val DIALOG_BOOK_TAG = "book"
   private val REQUEST_CAMERA_CODE = 0
@@ -43,10 +47,13 @@ class ScannerActivity : BaseActivity(), BookDialog.BookDialogCallback, InfoDialo
   private var isFirst: Boolean = false
   private var count: Int = 0
   private var countSearch: Int = 0
+  private var isFromSearch: Boolean = false
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_scanner)
+
+    isFromSearch = intent.getBooleanExtra(EXTRA_IS_FROM_SEARCH, false)
 
     initializeCamera()
     scannerView = findViewById(R.id.scannerView) as SurfaceView
@@ -209,12 +216,18 @@ class ScannerActivity : BaseActivity(), BookDialog.BookDialogCallback, InfoDialo
   }
 
   fun bookFound(book: Book) {
-    val dialog = BookDialog.newInstance(book)
-    count += 1
-    dialog.isCancelable = false
-    if(count == 1) {
-      countSearch += 1
-      dialog.show(supportFragmentManager, DIALOG_BOOK_TAG)
+    if (isFromSearch){
+      val intent = Intent(this, BookActivity::class.java)
+      intent.putExtra(BookActivity.EXTRA_BOOK, book.toJson())
+      startActivity(intent)
+    } else {
+      val dialog = BookDialog.newInstance(book)
+      count += 1
+      dialog.isCancelable = false
+      if(count == 1) {
+        countSearch += 1
+        dialog.show(supportFragmentManager, DIALOG_BOOK_TAG)
+      }
     }
   }
 
