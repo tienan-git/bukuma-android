@@ -20,8 +20,8 @@
         android:id="@+id/imageview"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="@color/black12"
-        android:scaleType="centerCrop"/>
+        android:background="@android:color/white"
+        android:scaleType="fitCenter"/>
 
       <ImageView
         android:id="@+id/sold_imageview"
