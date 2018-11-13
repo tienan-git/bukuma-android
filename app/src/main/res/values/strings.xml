@@ -145,8 +145,8 @@
   <!-- barcode scanner -->
   <string name="scanner_search">直接タイトル入力</string>
   <string name="scanner_description">978 - から始まるバーコードを読み取ります</string>
-  <string name="scanner_dialog_tutorial_title">バーコードで簡単出品</string>
-  <string name="scanner_dialog_tutorial_description">本の背面にある97で始まるバーコードを読み取ると、簡単に出品できます</string>
+  <string name="scanner_dialog_tutorial_title">バーコードで簡単検索</string>
+  <string name="scanner_dialog_tutorial_description">本の背面にある97で始まるバーコードを読み取ると、簡単に検索できます</string>
   <string name="scanner_dialog_tutorial_ok">OK、わかりました</string>
   <string name="scanner_dialog_not_found">このISBNに対応した本の情報が取得できませんでした</string>
   <string name="scanner_dialog_book_found">読み込みに成功しました</string>
