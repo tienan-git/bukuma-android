@@ -67,13 +67,6 @@
         android:textSize="10sp"
         android:textStyle="bold"/>
 
-      <jp.com.labit.bukuma.ui.custom.LikeView
-        android:id="@+id/like_view"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-          android:layout_alignRight="@id/imageview"
-        android:layout_above="@id/like_textview"/>
-
       <TextView
           android:id="@+id/like_textview"
           android:layout_width="30dp"
@@ -83,7 +76,14 @@
           android:gravity="center"
           android:text="0"
           android:textColor="@color/black54"
-          android:textSize="12sp" />
+          android:textSize="12sp"/>
+
+      <jp.com.labit.bukuma.ui.custom.LikeView
+          android:id="@+id/like_view"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_alignRight="@id/imageview"
+          android:layout_above="@id/like_textview"/>
 
     </RelativeLayout>
 
