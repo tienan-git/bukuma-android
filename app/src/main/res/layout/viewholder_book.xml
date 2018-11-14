@@ -67,12 +67,22 @@
         android:textSize="10sp"
         android:textStyle="bold"/>
 
+       <jp.com.labit.bukuma.ui.custom.OvalView
+          android:id="@+id/circle"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:alpha="0.9"
+          android:layout_alignRight="@id/imageview"
+          android:layout_alignBottom="@id/imageview"
+          android:background="@android:color/white" />
+
       <TextView
           android:id="@+id/like_textview"
-          android:layout_width="30dp"
+          android:layout_width="40dp"
           android:layout_height="wrap_content"
-          android:layout_alignBottom="@id/imageview"
-          android:layout_alignRight="@id/imageview"
+          android:layout_alignRight="@id/circle"
+          android:layout_alignBottom="@id/circle"
+          android:layout_marginBottom="3dp"
           android:gravity="center"
           android:text="0"
           android:textColor="@color/black54"
@@ -80,10 +90,11 @@
 
       <jp.com.labit.bukuma.ui.custom.LikeView
           android:id="@+id/like_view"
-          android:layout_width="30dp"
+          android:layout_width="40dp"
           android:layout_height="30dp"
-          android:layout_alignRight="@id/imageview"
-          android:layout_above="@id/like_textview"/>
+          android:layout_marginBottom="10dp"
+          android:layout_alignRight="@id/circle"
+          android:layout_alignBottom="@id/circle" />
 
     </RelativeLayout>
 
