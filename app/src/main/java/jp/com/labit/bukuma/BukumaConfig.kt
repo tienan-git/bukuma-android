@@ -37,7 +37,7 @@ class BukumaConfig(application: Application) {
    * device uuid
    */
   val uuid: String = Settings.Secure.getString(application.contentResolver, Settings.Secure.ANDROID_ID)
-  val baseUrl = if (BuildConfig.DEBUG) "http://stg.bukuma.io/" else "https://api.bukuma.io/"
+  val baseUrl = if (BuildConfig.DEBUG) "http://13.231.11.245/" else "https://api.bukuma.io/"
   val appName = if (BuildConfig.DEBUG) "bukuma_stg" else "bukuma_from_v1_5"
   val sharedKey = "bukumaZ1"
   val apiKey = "e5c5b31f2df29dbc37d19f1392ef35745ee82c0800ba7c0ee9ab13571809b84a"

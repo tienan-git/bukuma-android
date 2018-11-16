@@ -36,6 +36,7 @@ class ScannerActivity : BaseActivity(), BookDialog.BookDialogCallback, InfoDialo
 
   companion object {
     val EXTRA_IS_FROM_SEARCH = "extra_is_from_search"
+    private var isFromSearchFirst: Boolean = false
   }
   private val DIALOG_SEARCHING_TAG = "searching"
   private val DIALOG_BOOK_TAG = "book"
@@ -53,7 +54,12 @@ class ScannerActivity : BaseActivity(), BookDialog.BookDialogCallback, InfoDialo
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_scanner)
 
-    isFromSearch = intent.getBooleanExtra(EXTRA_IS_FROM_SEARCH, false)
+    if (isFromSearchFirst) {
+      isFromSearch = isFromSearchFirst
+      isFromSearchFirst = false
+    } else {
+      isFromSearch = intent.getBooleanExtra(EXTRA_IS_FROM_SEARCH, false)
+    }
 
     initializeCamera()
     scannerView = findViewById(R.id.scannerView) as SurfaceView
@@ -67,6 +73,7 @@ class ScannerActivity : BaseActivity(), BookDialog.BookDialogCallback, InfoDialo
 
     // show dialog if first time
     if (preference.isFirstScan) {
+      isFromSearchFirst = intent.getBooleanExtra(EXTRA_IS_FROM_SEARCH, false)
       isFirst = true
       val dialog = InfoDialog.newInstance(
         getString(R.string.scanner_dialog_tutorial_title),
